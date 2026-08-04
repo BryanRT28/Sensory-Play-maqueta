@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sensory Play - Centro de Terapias Integrales</title>
+    <meta name="description" content="Especialistas en desarrollo infantil, terapia ocupacional, integración sensorial, lenguaje y psicología en San Juan de Lurigancho."/>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+    
+    <!-- Material Symbols Outlined -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- AOS CSS (Animaciones al hacer scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#b80049",
+                        "primary-container": "#e2165f",
+                        "on-primary": "#ffffff",
+                        "secondary": "#4f54b4",
+                        "secondary-container": "#959aff",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#3d6700",
+                        "tertiary-container": "#4f8207",
+                        "on-tertiary": "#ffffff",
+                        "background": "#f8f9fa",
+                        "on-background": "#191c1d",
+                        "surface": "#ffffff",
+                        "surface-container-low": "#f3f4f5",
+                        "on-surface": "#191c1d",
+                        "on-surface-variant": "#5b3f43",
+                        "outline-variant": "#e4bdc2",
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "body": ["Work Sans", "sans-serif"],
+                        "headline": ["Plus Jakarta Sans", "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .cloud-shadow { box-shadow: 0 10px 30px rgba(79, 84, 180, 0.08); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+        .animate-float { animation: float 1.5s ease-in-out infinite; }
+
+        /* Garantiza la visibilidad segura del botón del menú en celulares */
+        @media (max-width: 767px) {
+            #menu-btn {
+                display: flex !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+                position: fixed !important;
+                right: 16px !important;
+                top: 16px !important;
+                z-index: 99999 !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body antialiased selection:bg-primary-container selection:text-on-primary">
+
+    <!-- WhatsApp Flotante Directo -->
+    <a href="https://wa.me/51997305893?text=Hola%20Sensory%20Play,%20quisiera%20recibir%20informaci%C3%B3n%20y%20agendar%20una%20evaluaci%C3%B3n." target="_blank" aria-label="WhatsApp Sensory Play" class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center justify-center animate-bounce">
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.183-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.765-5.77zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.289.129.332.202.043.073.043.423-.101.827z"/></svg>
+    </a>
+
+    <!-- Top Navigation Bar -->
+    <header class="sticky top-0 w-full z-[100] bg-surface/90 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm">
+        <div class="flex items-center justify-between px-4 sm:px-6 md:px-16 py-3 max-w-7xl mx-auto w-full relative">
+            
+            <!-- Logo + Nombre de la Marca -->
+            <a class="flex items-center gap-3 min-w-0 pr-12 md:pr-0" href="#">
+                <!-- Reemplazar src por tu logo (ej: img/logo.png) -->
+                <img src="img/logo.jpg" alt="Sensory Play Logo" class="h-20 sm:h-20 w-auto object-contain shrink-0"/>
+                
+                <div class="flex flex-col min-w-0">
+                    <span class="font-headline text-lg sm:text-2xl font-extrabold text-secondary tracking-tight leading-none truncate">Sensory Play</span>
+                    <span class="text-[9px] sm:text-[11px] font-body font-semibold text-primary tracking-wider uppercase truncate mt-0.5">Centro de Terapias Integrales</span>
+                </div>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex gap-8 items-center">
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-semibold text-sm" href="#">Inicio</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-semibold text-sm" href="#servicios">Servicios</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-semibold text-sm" href="#nosotros">Nosotros</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-semibold text-sm" href="#ubicacion">Ubicación</a>
+            </nav>
+            
+            <!-- Botón Cita Desktop -->
+            <a class="hidden md:inline-flex bg-primary text-on-primary font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-full hover:bg-primary-container transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5" href="#contacto">
+                Agenda tu Cita
+            </a>
+            
+            <!-- Botón Menú Móvil -->
+            <button id="menu-btn" type="button" class="md:hidden text-primary p-2 focus:outline-none shrink-0 items-center justify-center w-10 h-10 rounded-lg hover:bg-primary/5 active:bg-primary/10" aria-label="Abrir Menú">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Desplegable Móvil -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-surface/95 backdrop-blur-2xl border-b border-outline-variant/30 px-6 py-6 flex-col space-y-4 shadow-xl z-[99]">
+            <a class="mobile-link text-on-surface font-semibold text-lg hover:text-primary" href="#">Inicio</a>
+            <a class="mobile-link text-on-surface font-semibold text-lg hover:text-primary" href="#servicios">Servicios</a>
+            <a class="mobile-link text-on-surface font-semibold text-lg hover:text-primary" href="#nosotros">Nosotros</a>
+            <a class="mobile-link text-on-surface font-semibold text-lg hover:text-primary" href="#ubicacion">Ubicación</a>
+            <a class="mobile-link inline-block w-full text-center bg-primary text-on-primary font-bold text-sm uppercase tracking-wider px-6 py-3.5 rounded-full shadow" href="#contacto">Agenda tu Cita</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden">
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-surface-container-low rounded-bl-[100px] -z-10"></div>
+            
+            <div class="max-w-7xl mx-auto px-6 md:px-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="lg:col-span-6 space-y-6 text-center lg:text-left" data-aos="fade-right">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary font-bold text-xs uppercase tracking-wider">
+                        <span class="material-symbols-outlined text-sm">child_care</span>
+                        <span>Atención Especializada en SJL</span>
+                    </div>
+
+                    <h1 class="font-headline text-4xl sm:text-5xl lg:text-6xl font-extrabold text-secondary leading-tight">
+                        En <span class="text-primary">Sensory Play</span> creemos en el <span class="text-tertiary-container italic">potencial</span> de cada niño.
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-on-surface-variant max-w-lg mx-auto lg:mx-0 leading-relaxed">
+                        Brindamos terapias integrales con un enfoque amoroso, humano y especializado. Acompañamos el desarrollo de tu hijo respetando sus necesidades individuales.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                        <a href="https://wa.me/51997305893?text=Hola,%20deseo%20aprovechar%20el%2020%25%20de%20descuento%20en%20la%20evaluaci%C3%B3n%20inicial" target="_blank" class="inline-flex justify-center items-center gap-2 bg-primary text-on-primary font-bold text-xs uppercase tracking-wider px-8 py-4 rounded-full hover:bg-primary-container transition-all shadow-lg hover:-translate-y-0.5">
+                            Agenda con 20% Dscto.
+                            <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                        </a>
+                        <a href="#servicios" class="inline-flex justify-center items-center gap-2 border-2 border-secondary text-secondary font-bold text-xs uppercase tracking-wider px-8 py-4 rounded-full hover:bg-secondary/10 transition-all">
+                            Ver Terapias
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image Collage -->
+                <div class="lg:col-span-6 relative flex justify-center" data-aos="fade-left">
+                    <div class="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden border-8 border-surface cloud-shadow">
+                        <!-- Reemplazar con imagen real (ej: img/hero-ninio.jpg) -->
+                        <img src="https://placehold.co/600x600/e2e8f0/4f54b4?text=Imagen+Principal" alt="Niño en Terapia Sensory Play" class="w-full h-full object-cover"/>
+                    </div>
+                    
+                    <!-- Insignia Flotante -->
+                    <div class="absolute -bottom-6 -left-2 sm:left-4 z-20 bg-tertiary-container text-white px-6 py-4 rounded-2xl cloud-shadow animate-float flex items-center gap-3">
+                        <span class="material-symbols-outlined text-3xl">star</span>
+                        <div>
+                            <p class="font-bold text-sm leading-tight">Enfoque Personalizado</p>
+                            <p class="text-xs opacity-90">Cada avance cuenta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner Promocional Exclusivo -->
+        <section class="py-12 bg-surface-container-low border-y border-outline-variant/30">
+            <div class="max-w-7xl mx-auto px-6 md:px-16" data-aos="fade-up">
+                <div class="bg-surface rounded-3xl p-8 md:p-10 border border-primary/20 cloud-shadow flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+                    <div class="flex items-center gap-5">
+                        <div class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-4xl">local_offer</span>
+                        </div>
+                        <div>
+                            <span class="bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Promoción Especial</span>
+                            <h3 class="font-headline text-2xl md:text-3xl font-extrabold text-secondary mt-1">20% DE DESCUENTO</h3>
+                            <p class="text-sm text-on-surface-variant font-medium">En evaluaciones iniciales agendando directamente por WhatsApp.</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20la%20promoci%C3%B3n%20del%2020%25%20de%20descuento" target="_blank" class="bg-primary text-on-primary font-bold text-xs uppercase tracking-wider px-8 py-4 rounded-full hover:bg-primary-container transition-all shadow-md shrink-0">
+                        Obtener Descuento
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Valores / Pilares (Bento Grid) -->
+        <section id="nosotros" class="py-20 bg-surface">
+            <div class="max-w-7xl mx-auto px-6 md:px-16">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <span class="bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full">¿Por qué elegirnos?</span>
+                    <h2 class="font-headline text-3xl md:text-5xl font-extrabold text-secondary mt-3">Detrás de cada conducta, hay una necesidad</h2>
+                    <p class="text-on-surface-variant max-w-2xl mx-auto mt-3 text-base">Caminamos junto a las familias para brindar herramientas efectivas que perduren en el hogar.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Valor 1 -->
+                    <div class="bg-background rounded-3xl p-8 border border-outline-variant/30 cloud-shadow hover:-translate-y-1 transition-all" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-3xl">favorite</span>
+                        </div>
+                        <h3 class="font-headline text-xl font-bold text-secondary mb-3">Enfoque Individualizado</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Entendemos que cada niño es único. Diseñamos planes de terapia adaptados a su ritmo y fortalezas personales.</p>
+                    </div>
+
+                    <!-- Valor 2 -->
+                    <div class="bg-background rounded-3xl p-8 border border-outline-variant/30 cloud-shadow hover:-translate-y-1 transition-all" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-14 h-14 rounded-2xl bg-tertiary-container/10 text-tertiary-container flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-3xl">medical_services</span>
+                        </div>
+                        <h3 class="font-headline text-xl font-bold text-secondary mb-3">Tecnólogos Médicos Especializados</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Nuestro equipo profesional cuenta con capacitación constante en integración sensorial y desarrollo infantil.</p>
+                    </div>
+
+                    <!-- Valor 3 -->
+                    <div class="bg-background rounded-3xl p-8 border border-outline-variant/30 cloud-shadow hover:-translate-y-1 transition-all" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-14 h-14 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-3xl">diversity_3</span>
+                        </div>
+                        <h3 class="font-headline text-xl font-bold text-secondary mb-3">Acompañamiento a Familias</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Brindamos orientación y estrategias prácticas a los padres para que los avances continúen día a día.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios / Áreas Terapéuticas -->
+        <section id="servicios" class="py-20 bg-surface-container-low lotus-bg relative">
+            <div class="max-w-7xl mx-auto px-6 md:px-16 relative z-10">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <span class="bg-surface text-secondary text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full border border-outline-variant/30">Áreas de Atención</span>
+                    <h2 class="font-headline text-3xl md:text-5xl font-extrabold text-secondary mt-3">Nuestras Terapias Integrales</h2>
+                    <p class="text-on-surface-variant max-w-2xl mx-auto mt-3 text-base">Especialidades diseñadas para potenciar el área motora, comunicativa y emocional de tu pequeño.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Terapia Ocupacional -->
+                    <div class="bg-surface rounded-3xl overflow-hidden border border-outline-variant/30 shadow-md hover:shadow-xl transition-all group" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="h-48 overflow-hidden relative">
+                            <!-- Reemplazar con foto real (ej: img/terapia-ocupacional.jpg) -->
+                            <img src="https://placehold.co/600x400/e2e8f0/b80049?text=Imagen+Terapia+Ocupacional" alt="Terapia Ocupacional" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                            <span class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Integración Sensorial</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-headline text-xl font-bold text-secondary mb-2">Terapia Ocupacional</h3>
+                            <p class="text-xs font-semibold text-primary mb-3">Dirigida por Tecnólogos Médicos</p>
+                            <p class="text-sm text-on-surface-variant mb-4">Desarrolla habilidades motoras finas, autonomía en actividades diarias y procesamiento sensorial adecuado.</p>
+                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Terapia%20Ocupacional" target="_blank" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
+                                Consultar por WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Terapia de Lenguaje -->
+                    <div class="bg-surface rounded-3xl overflow-hidden border border-outline-variant/30 shadow-md hover:shadow-xl transition-all group" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="h-48 overflow-hidden relative">
+                            <!-- Reemplazar con foto real (ej: img/terapia-lenguaje.jpg) -->
+                            <img src="https://placehold.co/600x400/e2e8f0/4f54b4?text=Imagen+Terapia+de+Lenguaje" alt="Terapia de Lenguaje" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                            <span class="absolute top-4 left-4 bg-secondary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Comunicación</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-headline text-xl font-bold text-secondary mb-2">Terapia de Lenguaje</h3>
+                            <p class="text-xs font-semibold text-secondary mb-3">Dirigida por Tecnólogos Médicos</p>
+                            <p class="text-sm text-on-surface-variant mb-4">Mejora la articulación, fluidez, articulación de palabras y la expresión compresiva y verbal.</p>
+                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Terapia%20de%20Lenguaje" target="_blank" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
+                                Consultar por WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Terapia Psicológica y Emocional -->
+                    <div class="bg-surface rounded-3xl overflow-hidden border border-outline-variant/30 shadow-md hover:shadow-xl transition-all group" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="h-48 overflow-hidden relative">
+                            <!-- Reemplazar con foto real (ej: img/terapia-psicologica.jpg) -->
+                            <img src="https://placehold.co/600x400/e2e8f0/3d6700?text=Imagen+Terapia+Psicologica" alt="Terapia Psicológica" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                            <span class="absolute top-4 left-4 bg-tertiary-container text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Soporte Emocional</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-headline text-xl font-bold text-secondary mb-2">Terapia Psicológica</h3>
+                            <p class="text-xs font-semibold text-tertiary mb-3">Gestión de Emociones</p>
+                            <p class="text-sm text-on-surface-variant mb-4">Acompañamiento en autorregulación, tolerancia a la frustración, berrinches y fortalecimiento de autoestima.</p>
+                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Terapia%20Psicol%C3%B3gica" target="_blank" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
+                                Consultar por WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Modificación de Conducta -->
+                    <div class="bg-surface rounded-3xl overflow-hidden border border-outline-variant/30 shadow-md hover:shadow-xl transition-all group" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="h-48 overflow-hidden relative">
+                            <!-- Reemplazar con foto real (ej: img/modificacion-conducta.jpg) -->
+                            <img src="https://placehold.co/600x400/e2e8f0/4f54b4?text=Imagen+Modificacion+de+Conducta" alt="Modificación de Conducta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-headline text-xl font-bold text-secondary mb-2">Modificación de Conducta</h3>
+                            <p class="text-sm text-on-surface-variant mb-4">Estrategias personalizadas para canalizar conductas desafiantes y establecer pautas positivas en el hogar.</p>
+                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Modificaci%C3%B3n%20de%20Conducta" target="_blank" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
+                                Consultar por WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Habilidades Sociales -->
+                    <div class="bg-surface rounded-3xl overflow-hidden border border-outline-variant/30 shadow-md hover:shadow-xl transition-all group" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="h-48 overflow-hidden relative">
+                            <!-- Reemplazar con foto real (ej: img/habilidades-sociales.jpg) -->
+                            <img src="https://placehold.co/600x400/e2e8f0/b80049?text=Imagen+Talleres+Sociales" alt="Habilidades Sociales" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-headline text-xl font-bold text-secondary mb-2">Talleres de Habilidades Sociales</h3>
+                            <p class="text-sm text-on-surface-variant mb-4">Dinámicas grupales orientadas a favorecer el juego compartido, empatía y resolución de conflictos entre pares.</p>
+                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Talleres%20de%20Habilidades%20Sociales" target="_blank" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
+                                Consultar por WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Estimulación Cognitiva -->
+                    <div class="bg-surface rounded-3xl overflow-hidden border border-outline-variant/30 shadow-md hover:shadow-xl transition-all group" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="h-48 overflow-hidden relative">
+                            <!-- Reemplazar con foto real (ej: img/estimulacion-cognitiva.jpg) -->
+                            <img src="https://placehold.co/600x400/e2e8f0/3d6700?text=Imagen+Estimulacion+Cognitiva" alt="Estimulación Cognitiva" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-headline text-xl font-bold text-secondary mb-2">Estimulación Cognitiva & Concentración</h3>
+                            <p class="text-sm text-on-surface-variant mb-4">Ejercicios lúdicos estructurados para potenciar la memoria, atención sostenida y razonamiento.</p>
+                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Estimulaci%C3%B3n%20Cognitiva" target="_blank" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
+                                Consultar por WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Vida en Sensory Play -->
+        <section class="py-16 bg-surface border-t border-outline-variant/30">
+            <div class="max-w-7xl mx-auto px-6 md:px-16">
+                
+                <!-- Encabezado de la Sección -->
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b border-outline-variant/30 pb-6 mb-10 gap-4">
+                    <div>
+                        <h2 class="font-headline text-3xl md:text-4xl font-extrabold text-secondary">
+                            La Vida en Sensory Play
+                        </h2>
+                        <p class="text-sm text-on-surface-variant font-medium mt-1">
+                            Síguenos para descubrir consejos, recomendaciones e historias de avance.
+                        </p>
+                    </div>
+                    
+                    <!-- Usuario de Instagram -->
+                    <a href="https://www.instagram.com/sensoryplay_terapias" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-secondary hover:text-primary transition-colors">
+                        <div class="w-6 h-6 rounded-md bg-secondary/10 flex items-center justify-center text-secondary">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.203 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                        </div>
+                        <span>@sensoryplay_terapias</span>
+                    </a>
+                </div>
+
+                <!-- Galería de 4 Columnas -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                    <!-- Foto 1 -->
+                    <div class="aspect-square rounded-2xl overflow-hidden shadow-md border border-outline-variant/30 group hover:shadow-xl transition-all">
+                        <img src="https://placehold.co/500x500/e2e8f0/b80049?text=Imagen1" alt="Actividad Sensorial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                    </div>
+
+                    <!-- Foto 2 -->
+                    <div class="aspect-square rounded-2xl overflow-hidden shadow-md border border-outline-variant/30 group hover:shadow-xl transition-all">
+                        <img src="https://placehold.co/500x500/e2e8f0/4f54b4?text=Imagen2" alt="Terapia de Lenguaje" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                    </div>
+
+                    <!-- Foto 3 (Infografía) -->
+                    <div class="aspect-square rounded-2xl overflow-hidden shadow-md border border-outline-variant/30 group hover:shadow-xl transition-all">
+                        <img src="https://placehold.co/500x500/e2e8f0/3d6700?text=Imagen3" alt="Sensory Tips Infografía" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                    </div>
+
+                    <!-- Foto 4 -->
+                    <div class="aspect-square rounded-2xl overflow-hidden shadow-md border border-outline-variant/30 group hover:shadow-xl transition-all">
+                        <img src="https://placehold.co/500x500/e2e8f0/4f54b4?text=Imagen4" alt="Instalaciones Sensory Play" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Ubicación y Reserva / Contacto (Bento Grid) -->
+        <section id="ubicacion" class="py-20 bg-surface">
+            <div class="max-w-7xl mx-auto px-6 md:px-16">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="font-headline text-3xl md:text-5xl font-extrabold text-secondary mb-3">Visítanos en San Juan de Lurigancho</h2>
+                    <p class="text-on-surface-variant max-w-xl mx-auto text-base">Un espacio seguro, cómodo y acondicionado para el desarrollo feliz de tu pequeño.</p>
+                </div>
+
+                <div id="contacto" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    <!-- Formulario de Reserva -->
+                    <div class="lg:col-span-7 bg-surface-container-low rounded-3xl p-8 md:p-10 shadow-lg border border-outline-variant/30 relative overflow-hidden" data-aos="fade-right">
+                        <h3 class="font-headline text-2xl font-bold text-secondary mb-6">Solicitar Asesoría o Evaluación</h3>
+                        
+                        <form id="booking-form" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-1" for="name">Nombre del Padre / Madre</label>
+                                    <input class="custom-input w-full text-on-surface font-medium focus:outline-none" id="name" required type="text" placeholder="Ej. María López"/>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-1" for="phone">Teléfono / WhatsApp</label>
+                                    <input class="custom-input w-full text-on-surface font-medium focus:outline-none" id="phone" required type="tel" placeholder="997 305 893"/>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-1" for="service">Terapia de Interés</label>
+                                    <select class="custom-input w-full text-on-surface font-medium focus:outline-none bg-transparent" id="service" required>
+                                        <option value="" disabled selected>Selecciona una opción</option>
+                                        <option value="Terapia Ocupacional">Terapia Ocupacional</option>
+                                        <option value="Terapia de Lenguaje">Terapia de Lenguaje</option>
+                                        <option value="Terapia Psicología/Emocional">Terapia Psicológica / Emocional</option>
+                                        <option value="Modificación de Conducta">Modificación de Conducta</option>
+                                        <option value="Habilidades Sociales">Talleres de Habilidades Sociales</option>
+                                        <option value="Estimulación Cognitiva">Estimulación Cognitiva / Concentración</option>
+                                        <option value="Consulta General">Evaluación Inicial General</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-1" for="child_age">Edad del Niño / Niña</label>
+                                    <input class="custom-input w-full text-on-surface font-medium focus:outline-none" id="child_age" type="text" placeholder="Ej. 4 años"/>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-1" for="message">Consulta o Motivo de Evaluación (Opcional)</label>
+                                <textarea class="custom-input w-full text-on-surface font-medium focus:outline-none resize-none" id="message" rows="3" placeholder="¿Qué aspectos o conductas te gustaría consultar?"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-primary text-on-primary font-bold text-xs uppercase tracking-wider py-4 rounded-full hover:bg-primary-container transition-all shadow-md flex items-center justify-center gap-2">
+                                <span>Enviar Solicitud por WhatsApp</span>
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Info de Contacto y Dirección -->
+                    <div class="lg:col-span-5 flex flex-col gap-6" data-aos="fade-left">
+                        <!-- Card Dirección Directa -->
+                        <div class="bg-surface rounded-3xl p-6 border border-outline-variant/30 cloud-shadow">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="material-symbols-outlined text-primary text-2xl">location_on</span>
+                                <h4 class="font-headline text-lg font-bold text-secondary">Dirección del Centro</h4>
+                            </div>
+                            <p class="text-sm text-on-surface-variant font-medium pl-9 mb-4 leading-relaxed">
+                                Av. Las Flores de Primavera 979 (Paradero 7 de Las Flores), San Juan de Lurigancho, Lima, Perú.
+                            </p>
+                            <div class="pl-9 space-y-2 text-xs text-on-surface-variant">
+                                <p class="flex items-center gap-2"><span class="material-symbols-outlined text-base">call</span> +51 997 305 893</p>
+                                <p class="flex items-center gap-2"><span class="material-symbols-outlined text-base">mail</span> sensoryplay.to@gmail.com</p>
+                                <p class="flex items-center gap-2"><span class="material-symbols-outlined text-base">schedule</span> Lun - Sáb: 8:00 am - 7:00 pm</p>
+                            </div>
+                        </div>
+
+                        <!-- Card Atención Directa -->
+                        <div class="bg-secondary/5 rounded-3xl p-6 border border-secondary/20 flex flex-col items-center text-center">
+                            <div class="w-12 h-12 rounded-full bg-secondary/10 text-secondary flex items-center justify-center mb-3">
+                                <span class="material-symbols-outlined text-2xl">chat</span>
+                            </div>
+                            <h4 class="font-headline text-xl font-bold text-secondary mb-1">¿Tienes dudas o consultas?</h4>
+                            <p class="text-xs text-on-surface-variant mb-4">Escríbenos directamente a nuestro WhatsApp para orientarte.</p>
+                            <a href="https://wa.me/51997305893" target="_blank" class="w-full border-2 border-secondary text-secondary font-bold text-xs uppercase tracking-wider py-3 rounded-full hover:bg-secondary hover:text-white transition-colors flex items-center justify-center gap-2">
+                                <span>Chatear al 997 305 893</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-container-low border-t border-outline-variant/30 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+            
+            <!-- Columna Marca / Logo + Nombre -->
+            <div class="md:col-span-1">
+                <a href="#" class="flex items-center gap-3 mb-3">
+                    <img src="img/logo.jpg" alt="Sensory Play Logo Footer" class="h-16 w-auto object-contain"/>
+                    <div class="flex flex-col">
+                        <span class="font-headline text-xl font-extrabold text-secondary tracking-tight leading-none">Sensory Play</span>
+                        <span class="text-[9px] font-body font-semibold text-primary tracking-wider uppercase">Centro Terapéutico</span>
+                    </div>
+                </a>
+                <p class="text-xs text-on-surface-variant leading-relaxed">
+                    Centro de Terapias Integrales comprometido con el bienestar, aprendizaje y crecimiento feliz de los niños.
+                </p>
+            </div>
+            
+            <!-- Redes Sociales -->
+            <div>
+                <h4 class="font-bold text-xs text-on-surface uppercase tracking-wider mb-4">Síguenos</h4>
+                <ul class="space-y-3 text-xs text-on-surface-variant">
+                    <li>
+                        <a href="https://wa.me/51997305893" target="_blank" class="hover:text-primary transition-colors flex items-center gap-3">
+                            <div class="w-6 h-6 flex items-center justify-center shrink-0">
+                                <svg class="w-6 h-6 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984 0 1.763.459 3.483 1.332 5.002L2 22l5.129-1.343c1.464.798 3.111 1.218 4.883 1.218 5.508 0 9.991-4.479 9.991-9.985 0-2.667-1.038-5.175-2.924-7.062C17.194 3.041 14.68 2 12.012 2zm5.834 14.156c-.244.688-1.42 1.312-1.984 1.398-.507.077-1.149.108-1.853-.117-.428-.136-.976-.317-1.678-.621-2.952-1.276-4.88-4.248-5.028-4.444-.148-.196-1.203-1.6-1.203-3.051 0-1.452.761-2.166 1.032-2.46.27-.294.589-.368.786-.368.196 0 .393.001.564.01.182.008.425-.069.664.51.245.58.835 2.039.908 2.187.073.148.122.32.024.515-.098.196-.147.318-.294.49-.148.172-.311.385-.443.518-.148.147-.302.308-.13.57.172.262.765 1.262 1.644 2.043 1.13 1.006 2.083 1.318 2.378 1.465.295.148.467.123.639-.073.172-.196.737-.859.933-1.153.196-.295.393-.246.663-.148.271.098 1.721.81 2.016.958.295.148.492.221.565.343.073.123.073.713-.171 1.401z"/></svg>
+                            </div>
+                            <span>WhatsApp (997 305 893)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/sensoryplay_terapias" target="_blank" class="hover:text-primary transition-colors flex items-center gap-3">
+                            <div class="w-6 h-6 flex items-center justify-center shrink-0">
+                                <svg class="w-6 h-6 text-[#E4405F]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.203 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                            </div>
+                            <span>Instagram (@sensoryplay_terapias)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=61554241791972" target="_blank" class="hover:text-primary transition-colors flex items-center gap-3">
+                            <div class="w-6 h-6 flex items-center justify-center shrink-0">
+                                <svg class="w-6 h-6 text-[#1877F2]" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            </div>
+                            <span>Facebook (Sensory Play Terapias)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Columna Sedes -->
+            <div class="md:col-span-2">
+                <h4 class="font-bold text-xs text-on-surface uppercase tracking-wider mb-4">Sede Principal</h4>
+                <ul class="space-y-3 text-xs text-on-surface-variant">
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-base text-primary shrink-0 mt-0.5">location_on</span>
+                        <div>
+                            <strong class="text-on-surface block">San Juan de Lurigancho:</strong>
+                            <span>Av. Las Flores de Primavera 979 (Paradero 7 de Las Flores), SJL, Lima, Perú.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-outline-variant/30 pt-6 text-center text-xs text-on-surface-variant">
+            <p>© 2026 Sensory Play - Centro de Terapias Integrales. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- AOS JS & Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Inicializar animaciones descartando interferencia en móviles
+            AOS.init({
+                duration: 800,
+                once: true,
+                easing: 'ease-in-out',
+                disable: 'mobile'
+            });
+
+            // Menú Móvil
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    mobileMenu.classList.toggle('hidden');
+                    mobileMenu.classList.toggle('flex');
+                });
+
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        mobileMenu.classList.remove('flex');
+                    });
+                });
+
+                document.addEventListener('click', (e) => {
+                    if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+                        mobileMenu.classList.add('hidden');
+                        mobileMenu.classList.remove('flex');
+                    }
+                });
+            }
+
+            // Formulario dinámico enviando a WhatsApp
+            const bookingForm = document.getElementById('booking-form');
+            if(bookingForm) {
+                bookingForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    const name = document.getElementById('name').value.trim();
+                    const phone = document.getElementById('phone').value.trim();
+                    const service = document.getElementById('service').value;
+                    const childAge = document.getElementById('child_age').value.trim();
+                    const message = document.getElementById('message').value.trim();
+
+                    let text = `Hola Sensory Play, me gustaría solicitar información / agendar una evaluación:%0A%0A`;
+                    text += ` *Padre/Madre:* ${name}%0A`;
+                    text += ` *Teléfono:* ${phone}%0A`;
+                    text += ` *Terapia de Interés:* ${service}%0A`;
+                    if(childAge) text += ` *Edad del Niño/a:* ${childAge}%0A`;
+                    if(message) text += ` *Consulta:* ${message}%0A`;
+
+                    window.open(`https://wa.me/51997305893?text=${text}`, '_blank');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
