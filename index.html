@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth overflow-x-hidden w-full">
+<html lang="es" class="scroll-smooth overflow-x-hidden w-full max-w-[100vw]">
 <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"/>
     
     <title>Sensory Play | Centro de Terapias Integrales en San Juan de Lurigancho</title>
     <meta name="description" content="Centro especializado en Terapia Ocupacional, Integración Sensorial, Terapia de Lenguaje y Psicología Infantil en San Juan de Lurigancho (SJL), Lima. ¡Agenda tu evaluación!"/>
@@ -103,7 +103,7 @@
 
     <link href="css/styles.css" rel="stylesheet"/>
 </head>
-<body class="bg-background text-on-background font-body antialiased selection:bg-primary-container selection:text-on-primary overflow-x-hidden w-full relative">
+<body class="bg-background text-on-background font-body antialiased selection:bg-primary-container selection:text-on-primary overflow-x-hidden w-full max-w-[100vw] relative">
 
     <a href="https://wa.me/51997305893?text=Hola%20Sensory%20Play,%20quisiera%20recibir%20informaci%C3%B3n%20y%20agendar%20una%20evaluaci%C3%B3n." target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp a Sensory Play" class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center justify-center animate-bounce">
         <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.183-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.765-5.77zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.289.129.332.202.043.073.043.423-.101.827z"/></svg>
@@ -154,8 +154,9 @@
         </nav>
     </header>
 
-    <main>
-        <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden">
+    <main class="overflow-x-hidden w-full">
+        <!-- AÑADIDO: overflow-hidden a la sección Hero -->
+        <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden w-full">
             <div class="absolute top-0 right-0 w-1/2 h-full bg-surface-container-low rounded-bl-[100px] -z-10"></div>
             
             <div class="max-w-7xl mx-auto px-6 md:px-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -165,7 +166,7 @@
                         <span>Atención Especializada en SJL</span>
                     </div>
 
-                    <h1 class="font-headline text-4xl sm:text-5xl lg:text-6xl font-extrabold text-secondary leading-tight">
+                    <h1 class="font-headline text-4xl sm:text-5xl lg:text-6xl font-extrabold text-secondary leading-tight break-words">
                         En <span class="text-primary">Sensory Play</span> creemos en el <span class="text-tertiary-container italic">potencial</span> de cada niño.
                     </h1>
 
@@ -173,6 +174,7 @@
                         Acompañamos a tu hijo a desarrollar sus habilidades, fortalecer su confianza y alcanzar su máximo potencial con especialistas en Terapia Ocupacional, Lenguaje y Psicología en San Juan de Lurigancho.
                     </p>
 
+                    <!-- CONTENEDOR BOTONES ORIGINAL QUE PEDISTE RESTAURAR -->
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
                         <a href="https://wa.me/51997305893?text=Hola,%20deseo%20aprovechar%20el%2020%25%20de%20descuento%20en%20la%20evaluaci%C3%B3n%20inicial" target="_blank" class="inline-flex justify-center items-center gap-2 bg-primary text-on-primary font-bold text-xs uppercase tracking-wider px-8 py-4 rounded-full hover:bg-primary-container transition-all shadow-lg hover:-translate-y-0.5">
                             Agenda con 20% Dscto.
@@ -185,7 +187,8 @@
                 </div>
 
                 <div class="lg:col-span-6 relative flex justify-center" data-aos="fade-left">
-                    <div class="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden border-8 border-surface cloud-shadow">
+                    <!-- AÑADIDO: max-w-full para evitar que la imagen empuje el contenedor -->
+                    <div class="relative w-full max-w-md max-w-full aspect-square rounded-3xl overflow-hidden border-8 border-surface cloud-shadow">
                         <img src="img/hero.webp" alt="Niño en sesión de integración sensorial en Sensory Play San Juan de Lurigancho" class="w-full h-full object-cover" width="500" height="500"/>
                     </div>
                     
@@ -200,10 +203,11 @@
             </div>
         </section>
 
-        <!-- SECCIÓN PROMOCIONAL -->
-        <section class="py-12 bg-surface-container-low border-y border-outline-variant/30">
+        <!-- SECCIÓN PROMOCIONAL ORIGINAL QUE PEDISTE RESTAURAR -->
+        <!-- AÑADIDO: overflow-hidden -->
+        <section class="py-12 bg-surface-container-low border-y border-outline-variant/30 overflow-hidden w-full">
             <div class="max-w-7xl mx-auto px-6 md:px-16" data-aos="fade-up">
-                <div class="bg-surface rounded-3xl p-8 md:p-10 border border-primary/20 cloud-shadow flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+                <div class="bg-surface rounded-3xl p-8 md:p-10 border border-primary/20 cloud-shadow flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left overflow-hidden">
                     <div class="flex items-center gap-5">
                         <div class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
                             <span class="material-symbols-outlined text-4xl">local_offer</span>
@@ -221,7 +225,8 @@
             </div>
         </section>
 
-        <section id="nosotros" class="py-20 bg-surface">
+        <!-- AÑADIDO: overflow-hidden -->
+        <section id="nosotros" class="py-20 bg-surface overflow-hidden w-full">
             <div class="max-w-7xl mx-auto px-6 md:px-16">
                 <div class="text-center mb-16" data-aos="fade-up">
                     <span class="bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full">¿Por qué elegir Sensory Play?</span>
@@ -275,7 +280,8 @@
             </div>
         </section>
 
-        <section id="servicios" class="py-20 bg-surface-container-low lotus-bg relative">
+        <!-- AÑADIDO: overflow-hidden -->
+        <section id="servicios" class="py-20 bg-surface-container-low lotus-bg relative overflow-hidden w-full">
             <div class="max-w-7xl mx-auto px-6 md:px-16 relative z-10">
                 <div class="text-center mb-16" data-aos="fade-up">
                     <span class="bg-surface text-secondary text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full border border-outline-variant/30">Áreas de Atención</span>
@@ -403,7 +409,8 @@
             </div>
         </section>
 
-        <section id="equipo" class="relative py-16 md:py-20 bg-white overflow-hidden font-body">
+        <!-- AÑADIDO: overflow-hidden -->
+        <section id="equipo" class="relative py-16 md:py-20 bg-white overflow-hidden font-body w-full">
             
             <div class="absolute top-0 left-0 w-32 h-32 md:w-64 md:h-64 pointer-events-none z-0" aria-hidden="true">
                 <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
@@ -570,7 +577,8 @@
             </div>
         </section>
 
-        <section class="py-16 bg-surface border-t border-outline-variant/30">
+        <!-- AÑADIDO: overflow-hidden -->
+        <section class="py-16 bg-surface border-t border-outline-variant/30 overflow-hidden w-full">
             <div class="max-w-7xl mx-auto px-6 md:px-16">
                 
                 <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b border-outline-variant/30 pb-6 mb-10 gap-4">
@@ -602,21 +610,21 @@
                     </div>
 
                     <div class="gallery-item aspect-square rounded-2xl overflow-hidden shadow-md border border-outline-variant/30 group hover:shadow-xl transition-all cursor-pointer relative">
-                        <img src="img/sensory-play-2.webp" alt="Feliz día del niño" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        <img src="img/sensory-play-2.webp" alt="Dinámica de Terapia de Lenguaje en consultorio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-secondary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
                         </div>
                     </div>
 
                     <div class="gallery-item aspect-square rounded-2xl overflow-hidden shadow-md border border-outline-variant/30 group hover:shadow-xl transition-all cursor-pointer relative">
-                        <img src="img/sensory-play-3.webp" alt="Sensory Play" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        <img src="img/sensory-play-3.webp" alt="Sensory Tips e infografía de desarrollo infantil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-secondary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
                         </div>
                     </div>
 
                     <div class="gallery-item aspect-square rounded-2xl overflow-hidden shadow-md border border-outline-variant/30 group hover:shadow-xl transition-all cursor-pointer relative">
-                        <img src="img/sensory-play-4.webp" alt="Reunión" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        <img src="img/sensory-play-4.webp" alt="Instalaciones terapéuticas modernas de Sensory Play SJL" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-secondary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
                         </div>
@@ -637,7 +645,8 @@
             </div>
         </div>
 
-        <section id="opiniones" class="py-20 bg-surface-container-low border-t border-outline-variant/30 relative">
+        <!-- AÑADIDO: overflow-hidden -->
+        <section id="opiniones" class="py-20 bg-surface-container-low border-t border-outline-variant/30 relative overflow-hidden w-full">
             <div class="max-w-7xl mx-auto px-6 md:px-16 relative z-10">
                 
                 <div class="text-center mb-14" data-aos="fade-up">
@@ -827,7 +836,8 @@
             </div>
         </section>
 
-        <section id="ubicacion" class="py-20 bg-surface">
+        <!-- AÑADIDO: overflow-hidden -->
+        <section id="ubicacion" class="py-20 bg-surface overflow-hidden w-full">
             <div class="max-w-7xl mx-auto px-6 md:px-16">
                 <div class="text-center mb-16" data-aos="fade-up">
                     <h2 class="font-headline text-3xl md:text-5xl font-extrabold text-secondary mb-3">Visítanos en San Juan de Lurigancho</h2>
@@ -914,7 +924,8 @@
         </section>
     </main>
 
-    <footer class="bg-surface-container-low border-t border-outline-variant/30 pt-16 pb-8">
+    <!-- AÑADIDO: overflow-hidden -->
+    <footer class="bg-surface-container-low border-t border-outline-variant/30 pt-16 pb-8 overflow-hidden w-full">
         <div class="max-w-7xl mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
             
             <div class="md:col-span-1">
