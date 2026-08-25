@@ -3,100 +3,117 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Sensory Play - Centro de Terapias Integrales</title>
-    <meta name="description" content="Especialistas en desarrollo infantil, terapia ocupacional, integración sensorial, lenguaje y psicología en San Juan de Lurigancho."/>
     
-    <!-- Google Fonts -->
+    <title>Sensory Play | Centro de Terapias Integrales en San Juan de Lurigancho</title>
+    <meta name="description" content="Centro especializado en Terapia Ocupacional, Integración Sensorial, Terapia de Lenguaje y Psicología Infantil en San Juan de Lurigancho (SJL), Lima. ¡Agenda tu evaluación!"/>
+    <meta name="keywords" content="terapia ocupacional sjl, integracion sensorial san juan de lurigancho, terapia de lenguaje sjl, psicologia infantil lima, desarrollo infantil sjl, centro terapeutico infantil"/>
+    <meta name="author" content="Sensory Play"/>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+    
+    <link rel="canonical" href="https://sensoryplayterapias.com/"/>
+
+    <!-- Favicon & Iconos de Navegador / Buscadores -->
+    <link rel="icon" type="image/jpeg" href="img/logo.webp"/>
+    <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="img/logo.webp"/>
+    
+    <meta name="geo.region" content="PE-LIM"/>
+    <meta name="geo.placename" content="San Juan de Lurigancho, Lima"/>
+    <meta name="geo.position" content="-12.012599;-77.011661"/>
+    <meta name="ICBM" content="-12.012599, -77.011661"/>
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="es_PE"/>
+    <meta property="og:url" content="https://sensoryplayterapias.com/"/>
+    <meta property="og:site_name" content="Sensory Play"/>
+    <meta property="og:title" content="Sensory Play | Centro de Terapias Integrales en SJL"/>
+    <meta property="og:description" content="Especialistas en desarrollo infantil: Terapia Ocupacional con Integración Sensorial, Terapia de Lenguaje y Psicología Infantil en SJL."/>
+    <meta property="og:image" content="https://sensoryplayterapias.com/img/hero.webp"/>
+    <meta property="og:image:alt" content="Sensory Play Centro de Terapias Integrales"/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Sensory Play | Terapias Integrales en SJL"/>
+    <meta name="twitter:description" content="Terapia Ocupacional, Lenguaje y Psicología Infantil en San Juan de Lurigancho."/>
+    <meta name="twitter:image" content="https://sensoryplayterapias.com/img/hero.webp"/>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Sensory Play - Centro de Terapias Integrales",
+      "image": "https://sensoryplayterapias.com/img/hero.webp",
+      "logo": "https://sensoryplayterapias.com/img/logo.webp",
+      "@id": "https://sensoryplayterapias.com/",
+      "url": "https://sensoryplayterapias.com/",
+      "telephone": "+51997305893",
+      "email": "sensoryplay.to@gmail.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Las Flores de Primavera 979 (Paradero 7 de Las Flores)",
+        "addressLocality": "San Juan de Lurigancho",
+        "addressRegion": "Lima",
+        "postalCode": "15401",
+        "addressCountry": "PE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -12.0125989,
+        "longitude": -77.011661
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "19:00"
+      },
+      "sameAs": [
+        "https://www.instagram.com/sensoryplay_terapias",
+        "https://www.facebook.com/profile.php?id=61554241791972"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "4",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "medicalSpecialty": [
+        "Occupational Therapy",
+        "Speech Therapy",
+        "Child Psychology"
+      ]
+    }
+    </script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
     
-    <!-- Material Symbols Outlined -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     
-    <!-- AOS CSS (Animaciones al hacer scroll) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#b80049",
-                        "primary-container": "#e2165f",
-                        "on-primary": "#ffffff",
-                        "secondary": "#4f54b4",
-                        "secondary-container": "#959aff",
-                        "on-secondary": "#ffffff",
-                        "tertiary": "#3d6700",
-                        "tertiary-container": "#4f8207",
-                        "on-tertiary": "#ffffff",
-                        "background": "#f8f9fa",
-                        "on-background": "#191c1d",
-                        "surface": "#ffffff",
-                        "surface-container-low": "#f3f4f5",
-                        "on-surface": "#191c1d",
-                        "on-surface-variant": "#5b3f43",
-                        "outline-variant": "#e4bdc2",
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "2xl": "1rem",
-                        "3xl": "1.5rem",
-                        "full": "9999px"
-                    },
-                    fontFamily: {
-                        "body": ["Work Sans", "sans-serif"],
-                        "headline": ["Plus Jakarta Sans", "sans-serif"],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .cloud-shadow { box-shadow: 0 10px 30px rgba(79, 84, 180, 0.08); }
-        .material-symbols-outlined { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-8px); }
-        }
-        .animate-float { animation: float 1.5s ease-in-out infinite; }
-
-        /* Garantiza la visibilidad segura del botón del menú en celulares */
-        @media (max-width: 767px) {
-            #menu-btn {
-                display: flex !important;
-                visibility: visible !important;
-                opacity: 1 !important;
-                position: fixed !important;
-                right: 16px !important;
-                top: 16px !important;
-                z-index: 99999 !important;
-            }
-        }
-    </style>
+    <link href="css/styles.css" rel="stylesheet"/>
 </head>
 <body class="bg-background text-on-background font-body antialiased selection:bg-primary-container selection:text-on-primary">
 
-    <!-- WhatsApp Flotante Directo -->
-    <a href="https://wa.me/51997305893?text=Hola%20Sensory%20Play,%20quisiera%20recibir%20informaci%C3%B3n%20y%20agendar%20una%20evaluaci%C3%B3n." target="_blank" aria-label="WhatsApp Sensory Play" class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center justify-center animate-bounce">
-        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.183-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.765-5.77zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.289.129.332.202.043.073.043.423-.101.827z"/></svg>
+    <a href="https://wa.me/51997305893?text=Hola%20Sensory%20Play,%20quisiera%20recibir%20informaci%C3%B3n%20y%20agendar%20una%20evaluaci%C3%B3n." target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp a Sensory Play" class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center justify-center animate-bounce">
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.183-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.765-5.77zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.289.129.332.202.043.073.043.423-.101.827z"/></svg>
     </a>
 
-    <!-- Top Navigation Bar -->
     <header class="sticky top-0 w-full z-[100] bg-surface/90 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm">
         <div class="flex items-center justify-between px-4 sm:px-6 md:px-16 py-3 max-w-7xl mx-auto w-full relative">
             
-            <!-- Logo + Nombre de la Marca -->
-            <a class="flex items-center gap-3 min-w-0 pr-12 md:pr-0" href="#">
-                <!-- Reemplazar src por tu logo (ej: img/logo.png) -->
-                <img src="img/logo.jpg" alt="Sensory Play Logo" class="h-20 sm:h-20 w-auto object-contain shrink-0"/>
+            <a class="flex items-center gap-3 min-w-0 pr-12 md:pr-0" href="#" aria-label="Ir al inicio de Sensory Play">
+                <img src="img/logo.webp" alt="Logo de Sensory Play Centro de Terapias Integrales" class="h-20 w-auto object-contain shrink-0"/>
                 
                 <div class="flex flex-col min-w-0">
                     <span class="font-headline text-lg sm:text-2xl font-extrabold text-secondary tracking-tight leading-none truncate">Sensory Play</span>
@@ -104,22 +121,21 @@
                 </div>
             </a>
             
-            <!-- Desktop Navigation -->
-            <nav class="hidden md:flex gap-8 items-center">
+            <nav class="hidden md:flex gap-8 items-center" aria-label="Navegación principal">
                 <a class="text-on-surface-variant hover:text-primary transition-colors font-semibold text-sm" href="#">Inicio</a>
                 <a class="text-on-surface-variant hover:text-primary transition-colors font-semibold text-sm" href="#servicios">Servicios</a>
                 <a class="text-on-surface-variant hover:text-primary transition-colors font-semibold text-sm" href="#nosotros">Nosotros</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-semibold text-sm" href="#equipo">Equipo</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-semibold text-sm" href="#opiniones">Opiniones</a>
                 <a class="text-on-surface-variant hover:text-primary transition-colors font-semibold text-sm" href="#ubicacion">Ubicación</a>
             </nav>
             
-            <!-- Botón Cita Desktop -->
             <a class="hidden md:inline-flex bg-primary text-on-primary font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-full hover:bg-primary-container transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5" href="#contacto">
                 Agenda tu Cita
             </a>
             
-            <!-- Botón Menú Móvil -->
-            <button id="menu-btn" type="button" class="md:hidden text-primary p-2 focus:outline-none shrink-0 items-center justify-center w-10 h-10 rounded-lg hover:bg-primary/5 active:bg-primary/10" aria-label="Abrir Menú">
-                <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <button id="menu-btn" type="button" class="md:hidden text-primary p-2 focus:outline-none shrink-0 items-center justify-center w-10 h-10 rounded-lg hover:bg-primary/5 active:bg-primary/10" aria-label="Abrir Menú de navegación">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <line x1="3" y1="6" x2="21" y2="6"></line>
                     <line x1="3" y1="12" x2="21" y2="12"></line>
                     <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -127,23 +143,22 @@
             </button>
         </div>
 
-        <!-- Desplegable Móvil -->
-        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-surface/95 backdrop-blur-2xl border-b border-outline-variant/30 px-6 py-6 flex-col space-y-4 shadow-xl z-[99]">
+        <nav id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-surface/95 backdrop-blur-2xl border-b border-outline-variant/30 px-6 py-6 flex-col space-y-4 shadow-xl z-[99]" aria-label="Navegación móvil">
             <a class="mobile-link text-on-surface font-semibold text-lg hover:text-primary" href="#">Inicio</a>
             <a class="mobile-link text-on-surface font-semibold text-lg hover:text-primary" href="#servicios">Servicios</a>
             <a class="mobile-link text-on-surface font-semibold text-lg hover:text-primary" href="#nosotros">Nosotros</a>
+            <a class="mobile-link text-on-surface font-semibold text-lg hover:text-primary" href="#equipo">Equipo</a>
+            <a class="mobile-link text-on-surface font-semibold text-lg hover:text-primary" href="#opiniones">Opiniones</a>
             <a class="mobile-link text-on-surface font-semibold text-lg hover:text-primary" href="#ubicacion">Ubicación</a>
             <a class="mobile-link inline-block w-full text-center bg-primary text-on-primary font-bold text-sm uppercase tracking-wider px-6 py-3.5 rounded-full shadow" href="#contacto">Agenda tu Cita</a>
-        </div>
+        </nav>
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden">
             <div class="absolute top-0 right-0 w-1/2 h-full bg-surface-container-low rounded-bl-[100px] -z-10"></div>
             
             <div class="max-w-7xl mx-auto px-6 md:px-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <!-- Text Content -->
                 <div class="lg:col-span-6 space-y-6 text-center lg:text-left" data-aos="fade-right">
                     <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary font-bold text-xs uppercase tracking-wider">
                         <span class="material-symbols-outlined text-sm">child_care</span>
@@ -155,11 +170,11 @@
                     </h1>
 
                     <p class="text-base sm:text-lg text-on-surface-variant max-w-lg mx-auto lg:mx-0 leading-relaxed">
-                        Acompañamos a tu hijo a desarrollar sus habilidades, fortalecer su confianza y alcanzar su máximo potencial.
+                        Acompañamos a tu hijo a desarrollar sus habilidades, fortalecer su confianza y alcanzar su máximo potencial con especialistas en Terapia Ocupacional, Lenguaje y Psicología en San Juan de Lurigancho.
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
-                        <a href="https://wa.me/51997305893?text=Hola,%20deseo%20aprovechar%20el%2020%25%20de%20descuento%20en%20la%20evaluaci%C3%B3n%20inicial" target="_blank" class="inline-flex justify-center items-center gap-2 bg-primary text-on-primary font-bold text-xs uppercase tracking-wider px-8 py-4 rounded-full hover:bg-primary-container transition-all shadow-lg hover:-translate-y-0.5">
+                        <a href="https://wa.me/51997305893?text=Hola,%20deseo%20aprovechar%20el%2020%25%20de%20descuento%20en%20la%20evaluaci%C3%B3n%20inicial" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center gap-2 bg-primary text-on-primary font-bold text-xs uppercase tracking-wider px-8 py-4 rounded-full hover:bg-primary-container transition-all shadow-lg hover:-translate-y-0.5">
                             Agenda con 20% Dscto.
                             <span class="material-symbols-outlined text-lg">arrow_forward</span>
                         </a>
@@ -169,14 +184,11 @@
                     </div>
                 </div>
 
-                <!-- Hero Image Collage -->
                 <div class="lg:col-span-6 relative flex justify-center" data-aos="fade-left">
                     <div class="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden border-8 border-surface cloud-shadow">
-                        <!-- Reemplazar con imagen real (ej: img/hero-ninio.jpg) -->
-                        <img src="img/hero.webp" alt="Niño en Terapia Sensory Play" class="w-full h-full object-cover"/>
+                        <img src="img/hero.webp" alt="Niño en sesión de integración sensorial en Sensory Play San Juan de Lurigancho" class="w-full h-full object-cover" width="500" height="500"/>
                     </div>
                     
-                    <!-- Insignia Flotante -->
                     <div class="absolute -bottom-6 -left-2 sm:left-4 z-20 bg-tertiary-container text-white px-6 py-4 rounded-2xl cloud-shadow animate-float flex items-center gap-3">
                         <span class="material-symbols-outlined text-3xl">star</span>
                         <div>
@@ -188,7 +200,6 @@
             </div>
         </section>
 
-        <!-- Banner Promocional Exclusivo -->
         <section class="py-12 bg-surface-container-low border-y border-outline-variant/30">
             <div class="max-w-7xl mx-auto px-6 md:px-16" data-aos="fade-up">
                 <div class="bg-surface rounded-3xl p-8 md:p-10 border border-primary/20 cloud-shadow flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
@@ -202,14 +213,13 @@
                             <p class="text-sm text-on-surface-variant font-medium">En evaluaciones iniciales agendando directamente por WhatsApp.</p>
                         </div>
                     </div>
-                    <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20la%20promoci%C3%B3n%20del%2020%25%20de%20descuento" target="_blank" class="bg-primary text-on-primary font-bold text-xs uppercase tracking-wider px-8 py-4 rounded-full hover:bg-primary-container transition-all shadow-md shrink-0">
+                    <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20la%20promoci%C3%B3n%20del%2020%25%20de%20descuento" target="_blank" rel="noopener noreferrer" class="bg-primary text-on-primary font-bold text-xs uppercase tracking-wider px-8 py-4 rounded-full hover:bg-primary-container transition-all shadow-md shrink-0">
                         Obtener Descuento
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Valores / Pilares (Bento Grid) -->
         <section id="nosotros" class="py-20 bg-surface">
             <div class="max-w-7xl mx-auto px-6 md:px-16">
                 <div class="text-center mb-16" data-aos="fade-up">
@@ -220,7 +230,6 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
                     
-                    <!-- Pilar 1: Profesionales Especializados -->
                     <div class="bg-background rounded-3xl p-8 border border-outline-variant/30 cloud-shadow hover:-translate-y-1 transition-all md:col-span-1 lg:col-span-2" data-aos="fade-up" data-aos-delay="100">
                         <div class="w-14 h-14 rounded-2xl bg-tertiary-container/10 text-tertiary-container flex items-center justify-center mb-6">
                             <span class="material-symbols-outlined text-3xl">medical_services</span>
@@ -229,7 +238,6 @@
                         <p class="text-sm text-on-surface-variant leading-relaxed">Cada terapia es brindada por el profesional especializado en su campo, integrando Tecnólogos Médicos, Psicólogos y otros profesionales según las necesidades del niño.</p>
                     </div>
 
-                    <!-- Pilar 2: Atención Personalizada -->
                     <div class="bg-background rounded-3xl p-8 border border-outline-variant/30 cloud-shadow hover:-translate-y-1 transition-all md:col-span-1 lg:col-span-2" data-aos="fade-up" data-aos-delay="200">
                         <div class="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6">
                             <span class="material-symbols-outlined text-3xl">favorite</span>
@@ -238,7 +246,6 @@
                         <p class="text-sm text-on-surface-variant leading-relaxed">Cada niño cuenta con objetivos y estrategias adaptados a sus necesidades, fortalezas y ritmo de desarrollo.</p>
                     </div>
 
-                    <!-- Pilar 3: Trabajo Interdisciplinario -->
                     <div class="bg-background rounded-3xl p-8 border border-outline-variant/30 cloud-shadow hover:-translate-y-1 transition-all md:col-span-2 lg:col-span-2" data-aos="fade-up" data-aos-delay="300">
                         <div class="w-14 h-14 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center mb-6">
                             <span class="material-symbols-outlined text-3xl">hub</span>
@@ -247,7 +254,6 @@
                         <p class="text-sm text-on-surface-variant leading-relaxed">Integramos Terapia Ocupacional, Psicología y Terapia de Lenguaje, articulando las diferentes áreas para acompañar el desarrollo integral del niño.</p>
                     </div>
 
-                    <!-- Pilar 4: Acompañamiento a las Familias (Centrado abajo) -->
                     <div class="bg-background rounded-3xl p-8 border border-outline-variant/30 cloud-shadow hover:-translate-y-1 transition-all md:col-span-1 lg:col-span-2 lg:col-start-2" data-aos="fade-up" data-aos-delay="400">
                         <div class="w-14 h-14 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center mb-6">
                             <span class="material-symbols-outlined text-3xl">diversity_3</span>
@@ -256,7 +262,6 @@
                         <p class="text-sm text-on-surface-variant leading-relaxed">Trabajamos junto a las familias para que las estrategias y aprendizajes trasciendan el consultorio y formen parte de la vida cotidiana.</p>
                     </div>
 
-                    <!-- Pilar 5: Espacios Pensados para el Desarrollo (Centrado abajo) -->
                     <div class="bg-background rounded-3xl p-8 border border-outline-variant/30 cloud-shadow hover:-translate-y-1 transition-all md:col-span-1 lg:col-span-2" data-aos="fade-up" data-aos-delay="500">
                         <div class="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6">
                             <span class="material-symbols-outlined text-3xl">meeting_room</span>
@@ -269,7 +274,6 @@
             </div>
         </section>
 
-        <!-- Servicios / Áreas Terapéuticas -->
         <section id="servicios" class="py-20 bg-surface-container-low lotus-bg relative">
             <div class="max-w-7xl mx-auto px-6 md:px-16 relative z-10">
                 <div class="text-center mb-16" data-aos="fade-up">
@@ -280,12 +284,10 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
                     
-                    <!-- Terapia Ocupacional -->
                     <div class="bg-surface rounded-3xl overflow-hidden border border-outline-variant/30 shadow-md hover:shadow-xl transition-all group md:col-span-1 lg:col-span-2 flex flex-col justify-between" data-aos="zoom-in" data-aos-delay="100">
                         <div>
-                            <!-- Imagen con aspect ratio y min-height para móvil -->
                             <div class="w-full aspect-[4/3] min-h-[260px] sm:min-h-[300px] overflow-hidden relative">
-                                <img src="img/terapia-ocupacional.webp" alt="Terapia Ocupacional" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                                <img src="img/terapia-ocupacional.webp" alt="Sesión de Terapia Ocupacional e Integración Sensorial infantil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
                                 <span class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Integración Sensorial</span>
                             </div>
                             <div class="p-6 sm:p-7">
@@ -314,17 +316,16 @@
                         </div>
 
                         <div class="px-6 sm:px-7 pb-6 pt-0">
-                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Terapia%20Ocupacional" target="_blank" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
+                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Terapia%20Ocupacional" target="_blank" rel="noopener noreferrer" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
                                 Consultar por WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Terapia de Lenguaje -->
                     <div class="bg-surface rounded-3xl overflow-hidden border border-outline-variant/30 shadow-md hover:shadow-xl transition-all group md:col-span-1 lg:col-span-2 flex flex-col justify-between" data-aos="zoom-in" data-aos-delay="200">
                         <div>
                             <div class="w-full aspect-[4/3] min-h-[260px] sm:min-h-[300px] overflow-hidden relative">
-                                <img src="img/terapia-lenguaje.webp" alt="Terapia de Lenguaje" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                                <img src="img/terapia-lenguaje.webp" alt="Sesión de Terapia de Lenguaje y comunicación para niños" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
                                 <span class="absolute top-4 left-4 bg-secondary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Comunicación</span>
                             </div>
                             <div class="p-6 sm:p-7">
@@ -335,17 +336,16 @@
                         </div>
 
                         <div class="px-6 sm:px-7 pb-6 pt-0">
-                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Terapia%20de%20Lenguaje" target="_blank" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
+                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Terapia%20de%20Lenguaje" target="_blank" rel="noopener noreferrer" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
                                 Consultar por WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Terapia Psicológica y Emocional -->
                     <div class="bg-surface rounded-3xl overflow-hidden border border-outline-variant/30 shadow-md hover:shadow-xl transition-all group md:col-span-2 lg:col-span-2 flex flex-col justify-between" data-aos="zoom-in" data-aos-delay="300">
                         <div>
                             <div class="w-full aspect-[4/3] min-h-[260px] sm:min-h-[300px] overflow-hidden relative">
-                                <img src="img/terapia-psicologica.webp" alt="Terapia Psicológica" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                                <img src="img/terapia-psicologica.webp" alt="Atención en Psicología infantil y soporte emocional" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
                                 <span class="absolute top-4 left-4 bg-tertiary-container text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Soporte Emocional</span>
                             </div>
                             <div class="p-6 sm:p-7">
@@ -356,17 +356,16 @@
                         </div>
 
                         <div class="px-6 sm:px-7 pb-6 pt-0">
-                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Terapia%20Psicol%C3%B3gica" target="_blank" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
+                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Terapia%20Psicol%C3%B3gica" target="_blank" rel="noopener noreferrer" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
                                 Consultar por WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Habilidades Sociales (Centrada) -->
                     <div class="bg-surface rounded-3xl overflow-hidden border border-outline-variant/30 shadow-md hover:shadow-xl transition-all group md:col-span-1 lg:col-span-2 lg:col-start-2 flex flex-col justify-between" data-aos="zoom-in" data-aos-delay="200">
                         <div>
                             <div class="w-full aspect-[4/3] min-h-[260px] sm:min-h-[300px] overflow-hidden relative">
-                                <img src="img/taller-habilidades.webp" alt="Habilidades Sociales" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                                <img src="img/taller-habilidades.webp" alt="Taller de Habilidades Sociales e interacción grupal para niños" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
                             </div>
                             <div class="p-6 sm:p-7">
                                 <h3 class="font-headline text-xl sm:text-2xl font-bold text-secondary mb-2">Talleres de Habilidades Sociales</h3>
@@ -375,17 +374,16 @@
                         </div>
 
                         <div class="px-6 sm:px-7 pb-6 pt-0">
-                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Talleres%20de%20Habilidades%20Sociales" target="_blank" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
+                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Talleres%20de%20Habilidades%20Sociales" target="_blank" rel="noopener noreferrer" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
                                 Consultar por WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Taller de atención y concentración (Centrada) -->
                     <div class="bg-surface rounded-3xl overflow-hidden border border-outline-variant/30 shadow-md hover:shadow-xl transition-all group md:col-span-1 lg:col-span-2 flex flex-col justify-between" data-aos="zoom-in" data-aos-delay="300">
                         <div>
                             <div class="w-full aspect-[4/3] min-h-[260px] sm:min-h-[300px] overflow-hidden relative">
-                                <img src="img/taller-atencion.webp" alt="Taller de atención y concentración" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                                <img src="img/taller-atencion.webp" alt="Taller de estimulación cognitiva y concentración infantil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
                             </div>
                             <div class="p-6 sm:p-7">
                                 <h3 class="font-headline text-xl sm:text-2xl font-bold text-secondary mb-2">Taller de atención y concentración</h3>
@@ -394,7 +392,7 @@
                         </div>
 
                         <div class="px-6 sm:px-7 pb-6 pt-0">
-                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Estimulaci%C3%B3n%20Cognitiva" target="_blank" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
+                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Estimulaci%C3%B3n%20Cognitiva" target="_blank" rel="noopener noreferrer" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
                                 Consultar por WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span>
                             </a>
                         </div>
@@ -404,38 +402,28 @@
             </div>
         </section>
 
-        <!-- Sección: Conoce a Nuestro Equipo -->
         <section id="equipo" class="relative py-16 md:py-20 bg-white overflow-hidden font-body">
             
-            <!-- ====== DECORACIONES DE LOS EXTREMOS (Formas Redondeadas) ====== -->
-            
-            <!-- 1. Esquina superior izquierda: Forma redondeada verde pastel -->
-            <div class="absolute top-0 left-0 w-32 h-32 md:w-64 md:h-64 pointer-events-none z-0">
+            <div class="absolute top-0 left-0 w-32 h-32 md:w-64 md:h-64 pointer-events-none z-0" aria-hidden="true">
                 <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                    <!-- Curva perfectamente redondeada hacia adentro -->
                     <path d="M0 0H200C200 110.457 110.457 200 0 200V0Z" fill="#E2F0D9"/>
                 </svg>
             </div>
 
-            <!-- 3. Esquina superior derecha: Forma redondeada celeste pastel -->
-            <div class="absolute top-0 right-0 w-32 h-32 md:w-64 md:h-64 pointer-events-none z-0">
+            <div class="absolute top-0 right-0 w-32 h-32 md:w-64 md:h-64 pointer-events-none z-0" aria-hidden="true">
                 <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                    <!-- Curva perfectamente redondeada hacia adentro -->
                     <path d="M200 0H0C0 110.457 89.543 200 200 200V0Z" fill="#E8F4F8"/>
                 </svg>
             </div>
 
-            <!-- ====== CONTENIDO PRINCIPAL ====== -->
             <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-16 relative z-10">
                 
-                <!-- Encabezado -->
                 <div class="text-center mb-10 pt-8 md:pt-0" data-aos="fade-up">
                     <h3 class="text-sm md:text-xl font-headline font-extrabold uppercase tracking-wide text-[#1A3668]">QUIÉNES SOMOS</h3>
                     <h2 class="font-headline text-3xl sm:text-5xl font-extrabold text-[#1A3668] mt-1 mb-3">Conoce a nuestro equipo</h2>
                     <p class="text-[#4A5568] max-w-2xl mx-auto text-sm sm:text-base font-medium relative z-10 px-4 md:px-0">Profesionales especializados que trabajan juntos para acompañar el desarrollo de cada niño.</p>
                 </div>
 
-                <!-- Bloque Dirección -->
                 <div class="mb-12 relative">
                     <div class="flex items-center justify-center mb-8 relative z-10" data-aos="fade-up">
                         <span class="bg-[#5B85BA] text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-8 py-1.5 rounded-full shadow-sm border-2 border-white">DIRECCIÓN</span>
@@ -443,27 +431,21 @@
 
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         
-                        <!-- Directora 1: Lic. Kiara Sarmiento M. -->
                         <div class="bg-white rounded-[2rem] p-6 sm:p-8 shadow-[0_4px_20px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col sm:flex-row items-center gap-6 sm:gap-8 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="100">
-                            
-                            <!-- Foto más grande de la persona -->
                             <div class="w-full sm:w-60 shrink-0 rounded-2xl overflow-hidden bg-[#F2F2F2] aspect-[4/5] min-h-[280px]">
-                                <img src="img/kiara.webp" alt="Lic. Kiara Sarmiento M." class="w-full h-full object-cover object-top"/>
+                                <img src="img/kiara.webp" alt="Lic. Kiara Sarmiento M. - Fundadora y Directora de Sensory Play" class="w-full h-full object-cover object-top"/>
                             </div>
                             
-                            <!-- Info -->
                             <div class="flex flex-col justify-center text-center sm:text-left w-full">
                                 <div>
-                                    <h3 class="font-headline text-xl xl:text-2xl font-extrabold text-[#1A3668] leading-tight">Lic. Kiara Sarmiento&nbsp;M.</h3>
+                                    <h3 class="font-headline text-xl xl:text-2xl font-extrabold text-[#1A3668] leading-tight">Lic. Kiara Sarmiento M.</h3>
                                     <p class="text-[15px] font-bold text-[#E95B86] mt-1">Fundadora y Directora</p>
                                     <p class="text-[13px] text-gray-600 font-medium mt-1.5 leading-snug">Tecnóloga Médica –<br>Terapeuta Ocupacional</p>
                                 </div>
                                 
-                                <!-- Certificación Box -->
                                 <div class="mt-5 border border-gray-200 rounded-2xl p-3.5 flex items-center justify-center sm:justify-start gap-4 bg-gray-50/50">
-                                    <!-- Cuadrilátero redondeado para el logo -->
                                     <div class="w-14 h-14 shrink-0 rounded-2xl bg-white border border-gray-200 shadow-sm p-2 flex items-center justify-center">
-                                        <img src="img/usc.webp" alt="Logo Universidad" class="w-full h-full object-contain"/>
+                                        <img src="img/usc.webp" alt="Certificación USC Sensory Integration de University of Southern California" class="w-full h-full object-contain"/>
                                     </div>
                                     <div class="text-left">
                                         <p class="text-xs font-extrabold text-black leading-tight">Certificada en<br>Integración Sensorial</p>
@@ -473,27 +455,21 @@
                             </div>
                         </div>
 
-                        <!-- Director 2: Lic. Alonso Collantes L. -->
                         <div class="bg-white rounded-[2rem] p-6 sm:p-8 shadow-[0_4px_20px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col sm:flex-row items-center gap-6 sm:gap-8 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="200">
-                            
-                            <!-- Foto más grande de la persona -->
                             <div class="w-full sm:w-60 shrink-0 rounded-2xl overflow-hidden bg-[#F2F2F2] aspect-[4/5] min-h-[280px]">
-                                <img src="img/alonso.webp" alt="Lic. Alonso Collantes L." class="w-full h-full object-cover object-top"/>
+                                <img src="img/alonso.webp" alt="Lic. Alonso Collantes L. - Director y Coordinador de Terapia Ocupacional" class="w-full h-full object-cover object-top"/>
                             </div>
                             
-                            <!-- Info -->
                             <div class="flex flex-col justify-center text-center sm:text-left w-full">
                                 <div>
-                                    <h3 class="font-headline text-xl xl:text-2xl font-extrabold text-[#1A3668] leading-tight">Lic. Alonso Collantes&nbsp;L.</h3>
+                                    <h3 class="font-headline text-xl xl:text-2xl font-extrabold text-[#1A3668] leading-tight">Lic. Alonso Collantes L.</h3>
                                     <p class="text-[15px] font-bold text-[#E95B86] mt-1">Director y Coordinador de<br>Terapia Ocupacional</p>
-                                    <p class="text-[13px] text-gray-600 font-medium mt-1.5 leading-snug">Tecnólogo Médico –<br>Terapeuta Ocupacional</p>
+                                    <p class="text-[13px] text-gray-600 font-medium mt-1.5 leading-snug">Tecnóloga Médico –<br>Terapeuta Ocupacional</p>
                                 </div>
                                 
-                                <!-- Certificación Box -->
                                 <div class="mt-5 border border-gray-200 rounded-2xl p-3.5 flex items-center justify-center sm:justify-start gap-4 bg-gray-50/50">
-                                    <!-- Cuadrilátero redondeado para el logo -->
                                     <div class="w-14 h-14 shrink-0 rounded-2xl bg-white border border-gray-200 shadow-sm p-2 flex items-center justify-center">
-                                        <img src="img/usc.webp" alt="Logo Universidad" class="w-full h-full object-contain"/>
+                                        <img src="img/usc.webp" alt="Certificación USC Sensory Integration" class="w-full h-full object-contain"/>
                                     </div>
                                     <div class="text-left">
                                         <p class="text-xs font-extrabold text-black leading-tight">Certificado en<br>Integración Sensorial</p>
@@ -506,7 +482,6 @@
                     </div>
                 </div>
 
-                <!-- Línea Divisoria y Etiqueta de "Nuestro Equipo" -->
                 <div class="relative mt-16 mb-12" data-aos="fade-up">
                     <div class="absolute inset-0 flex items-center" aria-hidden="true">
                         <div class="w-full border-t-2 border-[#E2DFED]"></div>
@@ -516,12 +491,9 @@
                     </div>
                 </div>
 
-                <!-- Bloque Nuestro Equipo (Cards verticales con fotos más altas) -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6" data-aos="fade-up">
                     
-                    <!-- Tarjeta 1: Terapia Ocupacional -->
                     <div class="bg-white rounded-[2rem] shadow-[0_4px_20px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden hover:shadow-lg transition-shadow">
-                        <!-- Cabecera y Foto -->
                         <div class="p-6 flex-grow">
                             <div class="flex items-start gap-3 mb-5">
                                 <div class="w-14 h-14 rounded-full bg-[#80C59D] text-white flex items-center justify-center shrink-0">
@@ -532,12 +504,10 @@
                                     <p class="text-[12px] text-gray-600 font-medium mt-1 leading-snug">Tecnólogos Médicos –<br>Terapeutas Ocupacionales</p>
                                 </div>
                             </div>
-                            <!-- Contenedor con altura aumentada directa: h-72 sm:h-80 -->
                             <div class="w-full h-72 sm:h-80 rounded-2xl overflow-hidden bg-[#F2F2F2]">
-                                <img src="img/equipo-ocupacional.webp" alt="Equipo de Terapia Ocupacional" class="w-full h-full object-cover object-top"/>
+                                <img src="img/equipo-ocupacional.webp" alt="Equipo de Tecnólogos Médicos en Terapia Ocupacional Sensory Play" class="w-full h-full object-cover object-top"/>
                             </div>
                         </div>
-                        <!-- Footer Formación -->
                         <div class="bg-[#EBF5EE] px-6 py-4 flex items-start gap-3 mt-auto">
                             <span class="material-symbols-outlined text-black/60 text-xl shrink-0">school</span>
                             <div>
@@ -547,9 +517,7 @@
                         </div>
                     </div>
 
-                    <!-- Tarjeta 2: Terapia de Lenguaje -->
                     <div class="bg-white rounded-[2rem] shadow-[0_4px_20px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden hover:shadow-lg transition-shadow">
-                        <!-- Cabecera y Foto -->
                         <div class="p-6 flex-grow">
                             <div class="flex items-start gap-3 mb-5">
                                 <div class="w-14 h-14 rounded-full bg-[#F3BE58] text-white flex items-center justify-center shrink-0">
@@ -560,12 +528,10 @@
                                     <p class="text-[12px] text-gray-600 font-medium mt-1 leading-snug">Tecnólogo Médico –<br>Terapeuta de Lenguaje</p>
                                 </div>
                             </div>
-                            <!-- Contenedor con altura aumentada directa: h-72 sm:h-80 -->
                             <div class="w-full h-72 sm:h-80 rounded-2xl overflow-hidden bg-[#F2F2F2]">
-                                <img src="img/equipo-lenguaje.webp" alt="Equipo de Terapia de Lenguaje" class="w-full h-full object-cover object-top"/>
+                                <img src="img/equipo-lenguaje.webp" alt="Equipo de Especialistas en Terapia de Lenguaje Infantil" class="w-full h-full object-cover object-top"/>
                             </div>
                         </div>
-                        <!-- Footer Formación -->
                         <div class="bg-[#FEF7EB] px-6 py-4 flex items-start gap-3 mt-auto">
                             <span class="material-symbols-outlined text-black/60 text-xl shrink-0">school</span>
                             <div>
@@ -575,9 +541,7 @@
                         </div>
                     </div>
 
-                    <!-- Tarjeta 3: Psicología -->
                     <div class="bg-white rounded-[2rem] shadow-[0_4px_20px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col overflow-hidden hover:shadow-lg transition-shadow">
-                        <!-- Cabecera y Foto -->
                         <div class="p-6 flex-grow">
                             <div class="flex items-start gap-3 mb-5">
                                 <div class="w-14 h-14 rounded-full bg-[#F39CB8] text-white flex items-center justify-center shrink-0">
@@ -588,12 +552,10 @@
                                     <p class="text-[12px] text-gray-600 font-medium mt-1 leading-snug">Psicólogas licenciadas y colegiadas<br>especializadas en atención infantil</p>
                                 </div>
                             </div>
-                            <!-- Contenedor con altura aumentada directa: h-72 sm:h-80 -->
                             <div class="w-full h-72 sm:h-80 rounded-2xl overflow-hidden bg-[#F2F2F2]">
-                                <img src="img/equipo-psicologia.webp" alt="Equipo de Psicología" class="w-full h-full object-cover object-top"/>
+                                <img src="img/equipo-psicologia.webp" alt="Equipo de Psicología infantil y desarrollo socioemocional" class="w-full h-full object-cover object-top"/>
                             </div>
                         </div>
-                        <!-- Footer Formación -->
                         <div class="bg-[#FDEFF3] px-6 py-4 flex items-start gap-3 mt-auto">
                             <span class="material-symbols-outlined text-black/60 text-xl shrink-0">school</span>
                             <div>
@@ -605,12 +567,11 @@
 
                 </div>
             </div>
+        </section>
 
-        <!-- Sección: Vida en Sensory Play -->
         <section class="py-16 bg-surface border-t border-outline-variant/30">
             <div class="max-w-7xl mx-auto px-6 md:px-16">
                 
-                <!-- Encabezado de la Sección -->
                 <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b border-outline-variant/30 pb-6 mb-10 gap-4">
                     <div>
                         <h2 class="font-headline text-3xl md:text-4xl font-extrabold text-secondary">
@@ -621,10 +582,9 @@
                         </p>
                     </div>
                     
-                    <!-- Usuario de Instagram -->
-                    <a href="https://www.instagram.com/sensoryplay_terapias" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-secondary hover:text-primary transition-colors">
+                    <a href="https://www.instagram.com/sensoryplay_terapias" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-bold text-secondary hover:text-primary transition-colors">
                         <div class="w-6 h-6 rounded-md bg-secondary/10 flex items-center justify-center text-secondary">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.203 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
                             </svg>
                         </div>
@@ -632,35 +592,30 @@
                     </a>
                 </div>
 
-                <!-- Galería de 4 Columnas -->
                 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-                    <!-- Foto 1 -->
                     <div class="gallery-item aspect-square rounded-2xl overflow-hidden shadow-md border border-outline-variant/30 group hover:shadow-xl transition-all cursor-pointer relative">
-                        <img src="img/sensory-play-1.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        <img src="img/sensory-play-1.webp" alt="Actividad Sensorial para niños en Sensory Play" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-secondary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
                         </div>
                     </div>
 
-                    <!-- Foto 2 -->
                     <div class="gallery-item aspect-square rounded-2xl overflow-hidden shadow-md border border-outline-variant/30 group hover:shadow-xl transition-all cursor-pointer relative">
-                        <img src="img/sensory-play-2.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        <img src="img/sensory-play-2.webp" alt="Dinámica de Terapia de Lenguaje en consultorio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-secondary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
                         </div>
                     </div>
 
-                    <!-- Foto 3 (Infografía) -->
                     <div class="gallery-item aspect-square rounded-2xl overflow-hidden shadow-md border border-outline-variant/30 group hover:shadow-xl transition-all cursor-pointer relative">
-                        <img src="img/sensory-play-3.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        <img src="img/sensory-play-3.webp" alt="Sensory Tips e infografía de desarrollo infantil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-secondary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
                         </div>
                     </div>
 
-                    <!-- Foto 4 -->
                     <div class="gallery-item aspect-square rounded-2xl overflow-hidden shadow-md border border-outline-variant/30 group hover:shadow-xl transition-all cursor-pointer relative">
-                        <img src="img/sensory-play-4.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        <img src="img/sensory-play-4.webp" alt="Instalaciones terapéuticas modernas de Sensory Play SJL" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-secondary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
                         </div>
@@ -670,34 +625,27 @@
             </div>
         </section>
 
-        <!-- Modal / Visor de Imagen Flotante (Lightbox) -->
-        <div id="image-modal" class="fixed inset-0 z-[200] hidden items-center justify-center bg-black/85 backdrop-blur-sm p-4 transition-opacity duration-300">
-            <!-- Botón Cerrar -->
+        <div id="image-modal" class="fixed inset-0 z-[200] hidden items-center justify-center bg-black/85 backdrop-blur-sm p-4 transition-opacity duration-300" role="dialog" aria-modal="true">
             <button id="modal-close" class="absolute top-5 right-5 text-white bg-white/10 hover:bg-white/25 rounded-full p-2.5 transition-colors focus:outline-none" aria-label="Cerrar vista previa">
                 <span class="material-symbols-outlined text-3xl leading-none">close</span>
             </button>
             
-            <!-- Contenedor de la Imagen Ampliada -->
             <div class="relative max-w-4xl max-h-[88vh] flex flex-col items-center">
-                <img id="modal-img" src="" alt="Vista Previa" class="max-w-full max-h-[82vh] rounded-2xl shadow-2xl object-contain border-2 border-white/15"/>
+                <img id="modal-img" src="" alt="Vista Previa Ampliada" class="max-w-full max-h-[82vh] rounded-2xl shadow-2xl object-contain border-2 border-white/15"/>
                 <p id="modal-caption" class="text-white text-sm font-medium mt-3 text-center tracking-wide"></p>
             </div>
         </div>
 
-        <!-- Sección: Opiniones Reales de Google -->
         <section id="opiniones" class="py-20 bg-surface-container-low border-t border-outline-variant/30 relative">
             <div class="max-w-7xl mx-auto px-6 md:px-16 relative z-10">
                 
-                <!-- Encabezado con Calificación Real -->
                 <div class="text-center mb-14" data-aos="fade-up">
                     <span class="bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full">Testimonios Reales</span>
                     <h2 class="font-headline text-3xl md:text-5xl font-extrabold text-secondary mt-3">Lo que dicen las familias</h2>
                     <p class="text-on-surface-variant max-w-xl mx-auto mt-2 text-sm sm:text-base">La confianza de los padres y el progreso de cada pequeño son nuestro mayor respaldo.</p>
                     
-                    <!-- Tarjeta / Insignia Google Rating -->
                     <div class="inline-flex flex-wrap items-center justify-center gap-3 bg-surface px-6 py-3 rounded-2xl shadow-sm border border-outline-variant/30 mt-6">
-                        <!-- Icono oficial de Google -->
-                        <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24">
+                        <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
                             <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
                             <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
@@ -719,19 +667,17 @@
                     </div>
                 </div>
 
-                <!-- Grid de 4 Reseñas Reales -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                     
-                    <!-- Reseña 1: Priscilla Cotera Wixsan -->
                     <div class="bg-surface rounded-3xl p-7 border border-outline-variant/30 cloud-shadow flex flex-col justify-between hover:-translate-y-1 transition-all" data-aos="fade-up" data-aos-delay="100">
                         <div>
                             <div class="flex items-center justify-between mb-4">
                                 <div class="flex items-center gap-3">
                                     <div class="w-12 h-12 rounded-full overflow-hidden shrink-0 border border-outline-variant/40">
-                                        <img src="https://lh3.googleusercontent.com/a-/ALV-UjV8T4glo5Ej2SCRm8Y7XYHXU5hnyVu4EjH5PPnLyXLhlApki766=w72-h72-p-rp-mo-br100" alt="Priscilla Cotera Wixsan" class="w-full h-full object-cover"/>
+                                        <img src="https://lh3.googleusercontent.com/a-/ALV-UjV8T4glo5Ej2SCRm8Y7XYHXU5hnyVu4EjH5PPnLyXLhlApki766=w72-h72-p-rp-mo-br100" alt="Foto de Priscilla Cotera Wixsan" class="w-full h-full object-cover"/>
                                     </div>
                                     <div>
-                                        <h4 class="font-headline text-sm font-bold text-secondary">Priscilla Cotera Wixsan</h4>
+                                        <h3 class="font-headline text-sm font-bold text-secondary">Priscilla Cotera Wixsan</h3>
                                         <p class="text-[11px] text-on-surface-variant">2 opiniones • Hace 3 meses</p>
                                     </div>
                                 </div>
@@ -756,16 +702,15 @@
                         </div>
                     </div>
 
-                    <!-- Reseña 2: Nicol Cherres -->
                     <div class="bg-surface rounded-3xl p-7 border border-outline-variant/30 cloud-shadow flex flex-col justify-between hover:-translate-y-1 transition-all" data-aos="fade-up" data-aos-delay="200">
                         <div>
                             <div class="flex items-center justify-between mb-4">
                                 <div class="flex items-center gap-3">
                                     <div class="w-12 h-12 rounded-full overflow-hidden shrink-0 border border-outline-variant/40">
-                                        <img src="https://lh3.googleusercontent.com/a-/ALV-UjUQc7ahBItoT_Oeph1lXGvJkAaEx-2JZUn8zev-vPHWW0wI1ORV=w72-h72-p-rp-mo-br100" alt="Nicol Cherres" class="w-full h-full object-cover"/>
+                                        <img src="https://lh3.googleusercontent.com/a-/ALV-UjUQc7ahBItoT_Oeph1lXGvJkAaEx-2JZUn8zev-vPHWW0wI1ORV=w72-h72-p-rp-mo-br100" alt="Foto de Nicol Cherres" class="w-full h-full object-cover"/>
                                     </div>
                                     <div>
-                                        <h4 class="font-headline text-sm font-bold text-secondary">Nicol Cherres</h4>
+                                        <h3 class="font-headline text-sm font-bold text-secondary">Nicol Cherres</h3>
                                         <p class="text-[11px] text-on-surface-variant">1 opinión • Hace 3 meses</p>
                                     </div>
                                 </div>
@@ -790,16 +735,15 @@
                         </div>
                     </div>
 
-                    <!-- Reseña 3: Luis Stewart Cotera Wixsan -->
                     <div class="bg-surface rounded-3xl p-7 border border-outline-variant/30 cloud-shadow flex flex-col justify-between hover:-translate-y-1 transition-all" data-aos="fade-up" data-aos-delay="300">
                         <div>
                             <div class="flex items-center justify-between mb-4">
                                 <div class="flex items-center gap-3">
                                     <div class="w-12 h-12 rounded-full overflow-hidden shrink-0 border border-outline-variant/40">
-                                        <img src="https://lh3.googleusercontent.com/a-/ALV-UjUKtc8UDCmA6DrkDlP_fffyVe0diD0XzxwiJYQ9FQw8CGPMmNIXLg=w72-h72-p-rp-mo-ba12-br100" alt="Luis Stewart Cotera Wixsan" class="w-full h-full object-cover"/>
+                                        <img src="https://lh3.googleusercontent.com/a-/ALV-UjUKtc8UDCmA6DrkDlP_fffyVe0diD0XzxwiJYQ9FQw8CGPMmNIXLg=w72-h72-p-rp-mo-ba12-br100" alt="Foto de Luis Stewart Cotera Wixsan" class="w-full h-full object-cover"/>
                                     </div>
                                     <div>
-                                        <h4 class="font-headline text-sm font-bold text-secondary">Luis Stewart Cotera Wixsan</h4>
+                                        <h3 class="font-headline text-sm font-bold text-secondary">Luis Stewart Cotera Wixsan</h3>
                                         <p class="text-[11px] text-on-surface-variant flex items-center gap-1">
                                             <span class="text-amber-600 font-semibold">Local Guide</span> • 28 opiniones • 2 fotos
                                         </p>
@@ -826,17 +770,15 @@
                         </div>
                     </div>
 
-                    <!-- Reseña 4: Anny -->
                     <div class="bg-surface rounded-3xl p-7 border border-outline-variant/30 cloud-shadow flex flex-col justify-between hover:-translate-y-1 transition-all" data-aos="fade-up" data-aos-delay="400">
                         <div>
                             <div class="flex items-center justify-between mb-4">
                                 <div class="flex items-center gap-3">
-                                    <!-- Avatar con la 'A' de Google -->
                                     <div class="w-12 h-12 rounded-full bg-[#4a6572] text-white font-extrabold flex items-center justify-center font-headline text-lg shrink-0 shadow-sm">
                                         A
                                     </div>
                                     <div>
-                                        <h4 class="font-headline text-sm font-bold text-secondary">Anny</h4>
+                                        <h3 class="font-headline text-sm font-bold text-secondary">Anny</h3>
                                         <p class="text-[11px] text-on-surface-variant">1 opinión • Hace 3 meses</p>
                                     </div>
                                 </div>
@@ -863,23 +805,19 @@
 
                 </div>
 
-                <!-- Botones de Acción Oficiales hacia Google Maps -->
                 <div class="mt-12 text-center flex flex-col sm:flex-row items-center justify-center gap-4" data-aos="fade-up">
-                    
-                    <!-- 1. Ver todas las reseñas -->
-                    <a href="https://www.google.com/maps/place/Sensory+Play/@-12.0125936,-77.0142359,17z/data=!4m8!3m7!1s0x9105cf223ee40c7f:0x1a5a60768a5f94db!8m2!3d-12.0125989!4d-77.011661!9m1!1b1!16s%2Fg%2F11vpxvh9d9?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    class="inline-flex items-center gap-2 border-2 border-secondary text-secondary font-bold text-xs uppercase tracking-wider px-6 py-3.5 rounded-full hover:bg-secondary hover:text-white transition-all shadow-sm">
+                    <a href="https://maps.google.com/?q=place_id:ChIJfwzkPiLPBZER25RfinZgWho" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="inline-flex items-center gap-2 border-2 border-secondary text-secondary font-bold text-xs uppercase tracking-wider px-6 py-3.5 rounded-full hover:bg-secondary hover:text-white transition-all shadow-sm">
                         <span class="material-symbols-outlined text-base">open_in_new</span>
                         <span>Ver todas las reseñas en Google Maps</span>
                     </a>
                     
-                    <!-- 2. Ventana directa para calificar con 5 estrellas y escribir -->
                     <a href="https://search.google.com/local/writereview?placeid=ChIJfwzkPiLPBZER25RfinZgWho" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    class="inline-flex items-center gap-2 bg-primary text-white font-bold text-xs uppercase tracking-wider px-6 py-3.5 rounded-full hover:bg-primary-container transition-all shadow-md">
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="inline-flex items-center gap-2 bg-primary text-white font-bold text-xs uppercase tracking-wider px-6 py-3.5 rounded-full hover:bg-primary-container transition-all shadow-md">
                         <span class="material-symbols-outlined text-base">rate_review</span>
                         <span>Dejar una opinión en Google</span>
                     </a>
@@ -888,7 +826,6 @@
             </div>
         </section>
 
-        <!-- Ubicación y Reserva / Contacto (Bento Grid) -->
         <section id="ubicacion" class="py-20 bg-surface">
             <div class="max-w-7xl mx-auto px-6 md:px-16">
                 <div class="text-center mb-16" data-aos="fade-up">
@@ -897,7 +834,6 @@
                 </div>
 
                 <div id="contacto" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                    <!-- Formulario de Reserva -->
                     <div class="lg:col-span-7 bg-surface-container-low rounded-3xl p-8 md:p-10 shadow-lg border border-outline-variant/30 relative overflow-hidden" data-aos="fade-right">
                         <h3 class="font-headline text-2xl font-bold text-secondary mb-6">Solicitar Asesoría o Evaluación</h3>
                         
@@ -905,18 +841,18 @@
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-1" for="name">Nombre del Padre / Madre</label>
-                                    <input class="custom-input w-full text-on-surface font-medium focus:outline-none" id="name" required type="text" placeholder="Ej. María López"/>
+                                    <input class="custom-input w-full p-3 rounded-xl border border-outline-variant/50 text-on-surface font-medium focus:outline-none focus:ring-2 focus:ring-primary/20 bg-white" id="name" required type="text" placeholder="Ej. María López"/>
                                 </div>
                                 <div>
                                     <label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-1" for="phone">Teléfono / WhatsApp</label>
-                                    <input class="custom-input w-full text-on-surface font-medium focus:outline-none" id="phone" required type="tel" placeholder="997 305 893"/>
+                                    <input class="custom-input w-full p-3 rounded-xl border border-outline-variant/50 text-on-surface font-medium focus:outline-none focus:ring-2 focus:ring-primary/20 bg-white" id="phone" required type="tel" placeholder="997 305 893"/>
                                 </div>
                             </div>
 
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-1" for="service">Terapia de Interés</label>
-                                    <select class="custom-input w-full text-on-surface font-medium focus:outline-none bg-transparent" id="service" required>
+                                    <select class="custom-input w-full p-3 rounded-xl border border-outline-variant/50 text-on-surface font-medium focus:outline-none focus:ring-2 focus:ring-primary/20 bg-white" id="service" required>
                                         <option value="" disabled selected>Selecciona una opción</option>
                                         <option value="Terapia Ocupacional">Terapia Ocupacional</option>
                                         <option value="Terapia de Lenguaje">Terapia de Lenguaje</option>
@@ -929,13 +865,13 @@
                                 </div>
                                 <div>
                                     <label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-1" for="child_age">Edad del Niño / Niña</label>
-                                    <input class="custom-input w-full text-on-surface font-medium focus:outline-none" id="child_age" type="text" placeholder="Ej. 4 años"/>
+                                    <input class="custom-input w-full p-3 rounded-xl border border-outline-variant/50 text-on-surface font-medium focus:outline-none focus:ring-2 focus:ring-primary/20 bg-white" id="child_age" type="text" placeholder="Ej. 4 años"/>
                                 </div>
                             </div>
 
                             <div>
                                 <label class="block text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-1" for="message">Consulta o Motivo de Evaluación (Opcional)</label>
-                                <textarea class="custom-input w-full text-on-surface font-medium focus:outline-none resize-none" id="message" rows="3" placeholder="¿Qué aspectos o conductas te gustaría consultar?"></textarea>
+                                <textarea class="custom-input w-full p-3 rounded-xl border border-outline-variant/50 text-on-surface font-medium focus:outline-none focus:ring-2 focus:ring-primary/20 bg-white resize-none" id="message" rows="3" placeholder="¿Qué aspectos o conductas te gustaría consultar?"></textarea>
                             </div>
 
                             <button type="submit" class="w-full bg-primary text-on-primary font-bold text-xs uppercase tracking-wider py-4 rounded-full hover:bg-primary-container transition-all shadow-md flex items-center justify-center gap-2">
@@ -945,13 +881,11 @@
                         </form>
                     </div>
 
-                    <!-- Info de Contacto y Dirección -->
                     <div class="lg:col-span-5 flex flex-col gap-6" data-aos="fade-left">
-                        <!-- Card Dirección Directa -->
                         <div class="bg-surface rounded-3xl p-6 border border-outline-variant/30 cloud-shadow">
                             <div class="flex items-center gap-3 mb-3">
                                 <span class="material-symbols-outlined text-primary text-2xl">location_on</span>
-                                <h4 class="font-headline text-lg font-bold text-secondary">Dirección del Centro</h4>
+                                <h3 class="font-headline text-lg font-bold text-secondary">Dirección del Centro</h3>
                             </div>
                             <p class="text-sm text-on-surface-variant font-medium pl-9 mb-4 leading-relaxed">
                                 Av. Las Flores de Primavera 979 (Paradero 7 de Las Flores), San Juan de Lurigancho, Lima, Perú.
@@ -963,14 +897,13 @@
                             </div>
                         </div>
 
-                        <!-- Card Atención Directa -->
                         <div class="bg-secondary/5 rounded-3xl p-6 border border-secondary/20 flex flex-col items-center text-center">
                             <div class="w-12 h-12 rounded-full bg-secondary/10 text-secondary flex items-center justify-center mb-3">
                                 <span class="material-symbols-outlined text-2xl">chat</span>
                             </div>
-                            <h4 class="font-headline text-xl font-bold text-secondary mb-1">¿Tienes dudas o consultas?</h4>
+                            <h3 class="font-headline text-xl font-bold text-secondary mb-1">¿Tienes dudas o consultas?</h3>
                             <p class="text-xs text-on-surface-variant mb-4">Escríbenos directamente a nuestro WhatsApp para orientarte.</p>
-                            <a href="https://wa.me/51997305893" target="_blank" class="w-full border-2 border-secondary text-secondary font-bold text-xs uppercase tracking-wider py-3 rounded-full hover:bg-secondary hover:text-white transition-colors flex items-center justify-center gap-2">
+                            <a href="https://wa.me/51997305893" target="_blank" rel="noopener noreferrer" class="w-full border-2 border-secondary text-secondary font-bold text-xs uppercase tracking-wider py-3 rounded-full hover:bg-secondary hover:text-white transition-colors flex items-center justify-center gap-2">
                                 <span>Chatear al 997 305 893</span>
                             </a>
                         </div>
@@ -980,48 +913,45 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-surface-container-low border-t border-outline-variant/30 pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
             
-            <!-- Columna Marca / Logo + Nombre -->
             <div class="md:col-span-1">
-                <a href="#" class="flex items-center gap-3 mb-3">
-                    <img src="img/logo.jpg" alt="Sensory Play Logo Footer" class="h-16 w-auto object-contain"/>
+                <a href="#" class="flex items-center gap-3 mb-3" aria-label="Sensory Play Footer">
+                    <img src="img/logo.webp" alt="Logo de Sensory Play" class="h-16 w-auto object-contain"/>
                     <div class="flex flex-col">
                         <span class="font-headline text-xl font-extrabold text-secondary tracking-tight leading-none">Sensory Play</span>
                         <span class="text-[9px] font-body font-semibold text-primary tracking-wider uppercase">Centro Terapéutico</span>
                     </div>
                 </a>
                 <p class="text-xs text-on-surface-variant leading-relaxed">
-                    Centro de Terapias Integrales comprometido con el bienestar, aprendizaje y crecimiento feliz de los niños.
+                    Centro de Terapias Integrales comprometido con el bienestar, aprendizaje y crecimiento feliz de los niños en San Juan de Lurigancho.
                 </p>
             </div>
             
-            <!-- Redes Sociales -->
             <div>
                 <h4 class="font-bold text-xs text-on-surface uppercase tracking-wider mb-4">Síguenos</h4>
                 <ul class="space-y-3 text-xs text-on-surface-variant">
                     <li>
-                        <a href="https://wa.me/51997305893" target="_blank" class="hover:text-primary transition-colors flex items-center gap-3">
+                        <a href="https://wa.me/51997305893" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors flex items-center gap-3">
                             <div class="w-6 h-6 flex items-center justify-center shrink-0">
-                                <svg class="w-6 h-6 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984 0 1.763.459 3.483 1.332 5.002L2 22l5.129-1.343c1.464.798 3.111 1.218 4.883 1.218 5.508 0 9.991-4.479 9.991-9.985 0-2.667-1.038-5.175-2.924-7.062C17.194 3.041 14.68 2 12.012 2zm5.834 14.156c-.244.688-1.42 1.312-1.984 1.398-.507.077-1.149.108-1.853-.117-.428-.136-.976-.317-1.678-.621-2.952-1.276-4.88-4.248-5.028-4.444-.148-.196-1.203-1.6-1.203-3.051 0-1.452.761-2.166 1.032-2.46.27-.294.589-.368.786-.368.196 0 .393.001.564.01.182.008.425-.069.664.51.245.58.835 2.039.908 2.187.073.148.122.32.024.515-.098.196-.147.318-.294.49-.148.172-.311.385-.443.518-.148.147-.302.308-.13.57.172.262.765 1.262 1.644 2.043 1.13 1.006 2.083 1.318 2.378 1.465.295.148.467.123.639-.073.172-.196.737-.859.933-1.153.196-.295.393-.246.663-.148.271.098 1.721.81 2.016.958.295.148.492.221.565.343.073.123.073.713-.171 1.401z"/></svg>
+                                <svg class="w-6 h-6 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984 0 1.763.459 3.483 1.332 5.002L2 22l5.129-1.343c1.464.798 3.111 1.218 4.883 1.218 5.508 0 9.991-4.479 9.991-9.985 0-2.667-1.038-5.175-2.924-7.062C17.194 3.041 14.68 2 12.012 2zm5.834 14.156c-.244.688-1.42 1.312-1.984 1.398-.507.077-1.149.108-1.853-.117-.428-.136-.976-.317-1.678-.621-2.952-1.276-4.88-4.248-5.028-4.444-.148-.196-1.203-1.6-1.203-3.051 0-1.452.761-2.166 1.032-2.46.27-.294.589-.368.786-.368.196 0 .393.001.564.01.182.008.425-.069.664.51.245.58.835 2.039.908 2.187.073.148.122.32.024.515-.098.196-.147.318-.294.49-.148.172-.311.385-.443.518-.148.147-.302.308-.13.57.172.262.765 1.262 1.644 2.043 1.13 1.006 2.083 1.318 2.378 1.465.295.148.467.123.639-.073.172-.196.737-.859.933-1.153.196-.295.393-.246.663-.148.271.098 1.721.81 2.016.958.295.148.492.221.565.343.073.123.073.713-.171 1.401z"/></svg>
                             </div>
                             <span>WhatsApp (997 305 893)</span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/sensoryplay_terapias" target="_blank" class="hover:text-primary transition-colors flex items-center gap-3">
+                        <a href="https://www.instagram.com/sensoryplay_terapias" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors flex items-center gap-3">
                             <div class="w-6 h-6 flex items-center justify-center shrink-0">
-                                <svg class="w-6 h-6 text-[#E4405F]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.203 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                                <svg class="w-6 h-6 text-[#E4405F]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.203 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
                             </div>
                             <span>Instagram (@sensoryplay_terapias)</span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/profile.php?id=61554241791972" target="_blank" class="hover:text-primary transition-colors flex items-center gap-3">
+                        <a href="https://www.facebook.com/profile.php?id=61554241791972" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors flex items-center gap-3">
                             <div class="w-6 h-6 flex items-center justify-center shrink-0">
-                                <svg class="w-6 h-6 text-[#1877F2]" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                                <svg class="w-6 h-6 text-[#1877F2]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                             </div>
                             <span>Facebook (Sensory Play Terapias)</span>
                         </a>
@@ -1029,7 +959,6 @@
                 </ul>
             </div>
 
-            <!-- Columna Sedes -->
             <div class="md:col-span-2">
                 <h4 class="font-bold text-xs text-on-surface uppercase tracking-wider mb-4">Sede Principal</h4>
                 <ul class="space-y-3 text-xs text-on-surface-variant">
@@ -1049,11 +978,10 @@
         </div>
     </footer>
 
-    <!-- AOS JS & Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Inicializar animaciones descartando interferencia en móviles
+            // Inicializar AOS
             AOS.init({
                 duration: 800,
                 once: true,
@@ -1088,7 +1016,7 @@
                 });
             }
 
-            // Funcionalidad Lightbox / Modal de Imágenes
+            // Lightbox / Modal de Imágenes
             const imageModal = document.getElementById('image-modal');
             const modalImg = document.getElementById('modal-img');
             const modalCaption = document.getElementById('modal-caption');
@@ -1096,38 +1024,34 @@
             const galleryItems = document.querySelectorAll('.gallery-item');
 
             if (imageModal && modalImg && modalClose) {
-                // Abrir modal al hacer clic en cualquier imagen de la galería
                 galleryItems.forEach(item => {
                     item.addEventListener('click', () => {
                         const img = item.querySelector('img');
                         if (img) {
                             modalImg.src = img.src;
-                            modalImg.alt = img.alt || 'Vista previa';
+                            modalImg.alt = img.alt || 'Vista previa ampliada';
                             modalCaption.textContent = img.alt || '';
                             imageModal.classList.remove('hidden');
                             imageModal.classList.add('flex');
-                            document.body.style.overflow = 'hidden'; // Bloquea el scroll de la página de fondo
+                            document.body.style.overflow = 'hidden';
                         }
                     });
                 });
 
-                // Función para cerrar modal
                 const closeModal = () => {
                     imageModal.classList.add('hidden');
                     imageModal.classList.remove('flex');
-                    document.body.style.overflow = ''; // Restaura el scroll
+                    document.body.style.overflow = '';
                 };
 
                 modalClose.addEventListener('click', closeModal);
 
-                // Cerrar si se hace clic fuera de la imagen (en el fondo oscuro)
                 imageModal.addEventListener('click', (e) => {
                     if (e.target === imageModal) {
                         closeModal();
                     }
                 });
 
-                // Cerrar al presionar la tecla Escape
                 document.addEventListener('keydown', (e) => {
                     if (e.key === 'Escape' && !imageModal.classList.contains('hidden')) {
                         closeModal();
@@ -1135,7 +1059,7 @@
                 });
             }
 
-            // Formulario dinámico enviando a WhatsApp
+            // Formulario dinámico a WhatsApp
             const bookingForm = document.getElementById('booking-form');
             if(bookingForm) {
                 bookingForm.addEventListener('submit', (e) => {
@@ -1148,11 +1072,11 @@
                     const message = document.getElementById('message').value.trim();
 
                     let text = `Hola Sensory Play, me gustaría solicitar información / agendar una evaluación:%0A%0A`;
-                    text += ` *Padre/Madre:* ${name}%0A`;
-                    text += ` *Teléfono:* ${phone}%0A`;
-                    text += ` *Terapia de Interés:* ${service}%0A`;
-                    if(childAge) text += ` *Edad del Niño/a:* ${childAge}%0A`;
-                    if(message) text += ` *Consulta:* ${message}%0A`;
+                    text += `*Padre/Madre:* ${name}%0A`;
+                    text += `*Teléfono:* ${phone}%0A`;
+                    text += `*Terapia de Interés:* ${service}%0A`;
+                    if(childAge) text += `*Edad del Niño/a:* ${childAge}%0A`;
+                    if(message) text += `*Consulta:* ${message}%0A`;
 
                     window.open(`https://wa.me/51997305893?text=${text}`, '_blank');
                 });
