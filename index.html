@@ -12,7 +12,7 @@
     
     <link rel="canonical" href="https://sensoryplayterapias.com/"/>
 
-    <!-- Favicon & Iconos de Navegador / Buscadores -->
+    <!-- Favicon & Iconos -->
     <link rel="icon" type="image/jpeg" href="img/logo.webp"/>
     <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon"/>
     <link rel="apple-touch-icon" href="img/logo.webp"/>
@@ -93,15 +93,23 @@
     }
     </script>
     
+    <!-- Preconexión a dominios de fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
     
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <!-- Preload del LCP (Hero) -->
+    <link rel="preload" as="image" href="img/hero.webp" type="image/webp" fetchpriority="high"/>
 
+    <!-- Estilo Principal -->
     <link href="css/styles.css" rel="stylesheet"/>
+
+    <!-- Google Fonts con display=swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet"/>
+    
+    <!-- AOS CSS cargado de forma no bloqueante -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print" onload="this.media='all'"/>
+    <noscript><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/></noscript>
 </head>
 <body class="bg-background text-on-background font-body antialiased selection:bg-primary-container selection:text-on-primary overflow-x-hidden w-full max-w-[100vw] relative">
 
@@ -113,7 +121,7 @@
         <div class="flex items-center justify-between px-4 sm:px-6 md:px-16 py-3 max-w-7xl mx-auto w-full relative">
             
             <a class="flex items-center gap-3 min-w-0 pr-12 md:pr-0" href="#" aria-label="Ir al inicio de Sensory Play">
-                <img src="img/logo.webp" alt="Logo de Sensory Play Centro de Terapias Integrales" class="h-20 w-auto object-contain shrink-0"/>
+                <img src="img/logo.webp" alt="Logo de Sensory Play Centro de Terapias Integrales" class="h-20 w-auto object-contain shrink-0" width="80" height="80" fetchpriority="high"/>
                 
                 <div class="flex flex-col min-w-0">
                     <span class="font-headline text-lg sm:text-2xl font-extrabold text-secondary tracking-tight leading-none truncate">Sensory Play</span>
@@ -186,7 +194,7 @@
 
                 <div class="lg:col-span-6 relative flex justify-center" data-aos="fade-left">
                     <div class="relative w-full max-w-md max-w-full aspect-square rounded-3xl overflow-hidden border-8 border-surface cloud-shadow">
-                        <img src="img/hero.webp" alt="Niño en sesión de integración sensorial en Sensory Play San Juan de Lurigancho" class="w-full h-full object-cover" width="500" height="500"/>
+                        <img src="img/hero.webp" alt="Niño en sesión de integración sensorial en Sensory Play San Juan de Lurigancho" class="w-full h-full object-cover" width="500" height="500" fetchpriority="high"/>
                     </div>
                     
                     <div class="absolute -bottom-6 -left-2 sm:left-4 z-20 bg-tertiary-container text-white px-6 py-4 rounded-2xl cloud-shadow animate-float flex items-center gap-3">
@@ -288,7 +296,7 @@
                     <div class="bg-surface rounded-3xl overflow-hidden border border-outline-variant/30 shadow-md hover:shadow-xl transition-all group md:col-span-1 lg:col-span-2 flex flex-col justify-between" data-aos="zoom-in" data-aos-delay="100">
                         <div>
                             <div class="w-full aspect-[4/3] min-h-[260px] sm:min-h-[300px] overflow-hidden relative">
-                                <img src="img/terapia-ocupacional.webp" alt="Sesión de Terapia Ocupacional e Integración Sensorial infantil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                                <img src="img/terapia-ocupacional.webp" alt="Sesión de Terapia Ocupacional e Integración Sensorial infantil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="400" height="300"/>
                                 <span class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Integración Sensorial</span>
                             </div>
                             <div class="p-6 sm:p-7">
@@ -326,7 +334,7 @@
                     <div class="bg-surface rounded-3xl overflow-hidden border border-outline-variant/30 shadow-md hover:shadow-xl transition-all group md:col-span-1 lg:col-span-2 flex flex-col justify-between" data-aos="zoom-in" data-aos-delay="200">
                         <div>
                             <div class="w-full aspect-[4/3] min-h-[260px] sm:min-h-[300px] overflow-hidden relative">
-                                <img src="img/terapia-lenguaje.webp" alt="Sesión de Terapia de Lenguaje y comunicación para niños" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                                <img src="img/terapia-lenguaje.webp" alt="Sesión de Terapia de Lenguaje y comunicación para niños" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="400" height="300"/>
                                 <span class="absolute top-4 left-4 bg-secondary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Comunicación</span>
                             </div>
                             <div class="p-6 sm:p-7">
@@ -346,7 +354,7 @@
                     <div class="bg-surface rounded-3xl overflow-hidden border border-outline-variant/30 shadow-md hover:shadow-xl transition-all group md:col-span-2 lg:col-span-2 flex flex-col justify-between" data-aos="zoom-in" data-aos-delay="300">
                         <div>
                             <div class="w-full aspect-[4/3] min-h-[260px] sm:min-h-[300px] overflow-hidden relative">
-                                <img src="img/terapia-psicologica.webp" alt="Atención en Psicología infantil y soporte emocional" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                                <img src="img/terapia-psicologica.webp" alt="Atención en Psicología infantil y soporte emocional" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="400" height="300"/>
                                 <span class="absolute top-4 left-4 bg-tertiary-container text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Soporte Emocional</span>
                             </div>
                             <div class="p-6 sm:p-7">
@@ -366,7 +374,7 @@
                     <div class="bg-surface rounded-3xl overflow-hidden border border-outline-variant/30 shadow-md hover:shadow-xl transition-all group md:col-span-1 lg:col-span-2 lg:col-start-2 flex flex-col justify-between" data-aos="zoom-in" data-aos-delay="200">
                         <div>
                             <div class="w-full aspect-[4/3] min-h-[260px] sm:min-h-[300px] overflow-hidden relative">
-                                <img src="img/taller-habilidades.webp" alt="Taller de Habilidades Sociales e interacción grupal para niños" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                                <img src="img/taller-habilidades.webp" alt="Taller de Habilidades Sociales e interacción grupal para niños" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="400" height="300"/>
                             </div>
                             <div class="p-6 sm:p-7">
                                 <h3 class="font-headline text-xl sm:text-2xl font-bold text-secondary mb-2">Talleres de Habilidades Sociales</h3>
@@ -384,7 +392,7 @@
                     <div class="bg-surface rounded-3xl overflow-hidden border border-outline-variant/30 shadow-md hover:shadow-xl transition-all group md:col-span-1 lg:col-span-2 flex flex-col justify-between" data-aos="zoom-in" data-aos-delay="300">
                         <div>
                             <div class="w-full aspect-[4/3] min-h-[260px] sm:min-h-[300px] overflow-hidden relative">
-                                <img src="img/taller-atencion.webp" alt="Taller de estimulación cognitiva y concentración infantil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                                <img src="img/taller-atencion.webp" alt="Taller de estimulación cognitiva y concentración infantil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="400" height="300"/>
                             </div>
                             <div class="p-6 sm:p-7">
                                 <h3 class="font-headline text-xl sm:text-2xl font-bold text-secondary mb-2">Taller de atención y concentración</h3>
@@ -434,7 +442,7 @@
                         
                         <div class="bg-white rounded-[2rem] p-6 sm:p-8 shadow-[0_4px_20px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col sm:flex-row items-center gap-6 sm:gap-8 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="100">
                             <div class="w-full sm:w-60 shrink-0 rounded-2xl overflow-hidden bg-[#F2F2F2] aspect-[4/5] min-h-[280px]">
-                                <img src="img/kiara.webp" alt="Lic. Kiara Sarmiento M. - Fundadora y Directora de Sensory Play" class="w-full h-full object-cover object-top"/>
+                                <img src="img/kiara.webp" alt="Lic. Kiara Sarmiento M. - Fundadora y Directora de Sensory Play" class="w-full h-full object-cover object-top" loading="lazy" width="240" height="300"/>
                             </div>
                             
                             <div class="flex flex-col justify-center text-center sm:text-left w-full">
@@ -446,7 +454,7 @@
                                 
                                 <div class="mt-5 border border-gray-200 rounded-2xl p-3.5 flex items-center justify-center sm:justify-start gap-4 bg-gray-50/50">
                                     <div class="w-14 h-14 shrink-0 rounded-2xl bg-white border border-gray-200 shadow-sm p-2 flex items-center justify-center">
-                                        <img src="img/usc.webp" alt="Certificación USC Sensory Integration de University of Southern California" class="w-full h-full object-contain"/>
+                                        <img src="img/usc.webp" alt="Certificación USC Sensory Integration de University of Southern California" class="w-full h-full object-contain" width="48" height="48" loading="lazy"/>
                                     </div>
                                     <div class="text-left">
                                         <p class="text-xs font-extrabold text-black leading-tight">Certificada en<br>Integración Sensorial</p>
@@ -458,7 +466,7 @@
 
                         <div class="bg-white rounded-[2rem] p-6 sm:p-8 shadow-[0_4px_20px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col sm:flex-row items-center gap-6 sm:gap-8 hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="200">
                             <div class="w-full sm:w-60 shrink-0 rounded-2xl overflow-hidden bg-[#F2F2F2] aspect-[4/5] min-h-[280px]">
-                                <img src="img/alonso.webp" alt="Lic. Alonso Collantes L. - Director y Coordinador de Terapia Ocupacional" class="w-full h-full object-cover object-top"/>
+                                <img src="img/alonso.webp" alt="Lic. Alonso Collantes L. - Director y Coordinador de Terapia Ocupacional" class="w-full h-full object-cover object-top" loading="lazy" width="240" height="300"/>
                             </div>
                             
                             <div class="flex flex-col justify-center text-center sm:text-left w-full">
@@ -470,7 +478,7 @@
                                 
                                 <div class="mt-5 border border-gray-200 rounded-2xl p-3.5 flex items-center justify-center sm:justify-start gap-4 bg-gray-50/50">
                                     <div class="w-14 h-14 shrink-0 rounded-2xl bg-white border border-gray-200 shadow-sm p-2 flex items-center justify-center">
-                                        <img src="img/usc.webp" alt="Certificación USC Sensory Integration" class="w-full h-full object-contain"/>
+                                        <img src="img/usc.webp" alt="Certificación USC Sensory Integration" class="w-full h-full object-contain" width="48" height="48" loading="lazy"/>
                                     </div>
                                     <div class="text-left">
                                         <p class="text-xs font-extrabold text-black leading-tight">Certificado en<br>Integración Sensorial</p>
@@ -506,7 +514,7 @@
                                 </div>
                             </div>
                             <div class="w-full h-72 sm:h-80 rounded-2xl overflow-hidden bg-[#F2F2F2]">
-                                <img src="img/equipo-ocupacional.webp" alt="Equipo de Tecnólogos Médicos en Terapia Ocupacional Sensory Play" class="w-full h-full object-cover object-top"/>
+                                <img src="img/equipo-ocupacional.webp" alt="Equipo de Tecnólogos Médicos en Terapia Ocupacional Sensory Play" class="w-full h-full object-cover object-top" loading="lazy" width="350" height="320"/>
                             </div>
                         </div>
                         <div class="bg-[#EBF5EE] px-6 py-4 flex items-start gap-3 mt-auto">
@@ -530,7 +538,7 @@
                                 </div>
                             </div>
                             <div class="w-full h-72 sm:h-80 rounded-2xl overflow-hidden bg-[#F2F2F2]">
-                                <img src="img/equipo-lenguaje.webp" alt="Equipo de Especialistas en Terapia de Lenguaje Infantil" class="w-full h-full object-cover object-top"/>
+                                <img src="img/equipo-lenguaje.webp" alt="Equipo de Especialistas en Terapia de Lenguaje Infantil" class="w-full h-full object-cover object-top" loading="lazy" width="350" height="320"/>
                             </div>
                         </div>
                         <div class="bg-[#FEF7EB] px-6 py-4 flex items-start gap-3 mt-auto">
@@ -554,7 +562,7 @@
                                 </div>
                             </div>
                             <div class="w-full h-72 sm:h-80 rounded-2xl overflow-hidden bg-[#F2F2F2]">
-                                <img src="img/equipo-psicologia.webp" alt="Equipo de Psicología infantil y desarrollo socioemocional" class="w-full h-full object-cover object-top"/>
+                                <img src="img/equipo-psicologia.webp" alt="Equipo de Psicología infantil y desarrollo socioemocional" class="w-full h-full object-cover object-top" loading="lazy" width="350" height="320"/>
                             </div>
                         </div>
                         <div class="bg-[#FDEFF3] px-6 py-4 flex items-start gap-3 mt-auto">
@@ -595,28 +603,28 @@
 
                 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                     <div class="gallery-item aspect-square rounded-2xl overflow-hidden shadow-md border border-outline-variant/30 group hover:shadow-xl transition-all cursor-pointer relative">
-                        <img src="img/sensory-play-1.webp" alt="Actividad Sensorial para niños en Sensory Play" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        <img src="img/sensory-play-1.webp" alt="Actividad Sensorial para niños en Sensory Play" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="300" height="300"/>
                         <div class="absolute inset-0 bg-secondary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
                         </div>
                     </div>
 
                     <div class="gallery-item aspect-square rounded-2xl overflow-hidden shadow-md border border-outline-variant/30 group hover:shadow-xl transition-all cursor-pointer relative">
-                        <img src="img/sensory-play-2.webp" alt="Feliz día del niño" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        <img src="img/sensory-play-2.webp" alt="Feliz día del niño" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="300" height="300"/>
                         <div class="absolute inset-0 bg-secondary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
                         </div>
                     </div>
 
                     <div class="gallery-item aspect-square rounded-2xl overflow-hidden shadow-md border border-outline-variant/30 group hover:shadow-xl transition-all cursor-pointer relative">
-                        <img src="img/sensory-play-3.webp" alt="Sensory Play" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        <img src="img/sensory-play-3.webp" alt="Sensory Play" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="300" height="300"/>
                         <div class="absolute inset-0 bg-secondary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
                         </div>
                     </div>
 
                     <div class="gallery-item aspect-square rounded-2xl overflow-hidden shadow-md border border-outline-variant/30 group hover:shadow-xl transition-all cursor-pointer relative">
-                        <img src="img/sensory-play-4.webp" alt="Reunión" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        <img src="img/sensory-play-4.webp" alt="Reunión" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" width="300" height="300"/>
                         <div class="absolute inset-0 bg-secondary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
                         </div>
@@ -675,7 +683,7 @@
                             <div class="flex items-center justify-between mb-4">
                                 <div class="flex items-center gap-3">
                                     <div class="w-12 h-12 rounded-full overflow-hidden shrink-0 border border-outline-variant/40">
-                                        <img src="https://lh3.googleusercontent.com/a-/ALV-UjV8T4glo5Ej2SCRm8Y7XYHXU5hnyVu4EjH5PPnLyXLhlApki766=w72-h72-p-rp-mo-br100" alt="Foto de Priscilla Cotera Wixsan" class="w-full h-full object-cover"/>
+                                        <img src="https://lh3.googleusercontent.com/a-/ALV-UjV8T4glo5Ej2SCRm8Y7XYHXU5hnyVu4EjH5PPnLyXLhlApki766=w72-h72-p-rp-mo-br100" alt="Foto de Priscilla Cotera Wixsan" class="w-full h-full object-cover" width="48" height="48" loading="lazy"/>
                                     </div>
                                     <div>
                                         <h3 class="font-headline text-sm font-bold text-secondary">Priscilla Cotera Wixsan</h3>
@@ -708,7 +716,7 @@
                             <div class="flex items-center justify-between mb-4">
                                 <div class="flex items-center gap-3">
                                     <div class="w-12 h-12 rounded-full overflow-hidden shrink-0 border border-outline-variant/40">
-                                        <img src="https://lh3.googleusercontent.com/a-/ALV-UjUQc7ahBItoT_Oeph1lXGvJkAaEx-2JZUn8zev-vPHWW0wI1ORV=w72-h72-p-rp-mo-br100" alt="Foto de Nicol Cherres" class="w-full h-full object-cover"/>
+                                        <img src="https://lh3.googleusercontent.com/a-/ALV-UjUQc7ahBItoT_Oeph1lXGvJkAaEx-2JZUn8zev-vPHWW0wI1ORV=w72-h72-p-rp-mo-br100" alt="Foto de Nicol Cherres" class="w-full h-full object-cover" width="48" height="48" loading="lazy"/>
                                     </div>
                                     <div>
                                         <h3 class="font-headline text-sm font-bold text-secondary">Nicol Cherres</h3>
@@ -741,7 +749,7 @@
                             <div class="flex items-center justify-between mb-4">
                                 <div class="flex items-center gap-3">
                                     <div class="w-12 h-12 rounded-full overflow-hidden shrink-0 border border-outline-variant/40">
-                                        <img src="https://lh3.googleusercontent.com/a-/ALV-UjUKtc8UDCmA6DrkDlP_fffyVe0diD0XzxwiJYQ9FQw8CGPMmNIXLg=w72-h72-p-rp-mo-ba12-br100" alt="Foto de Luis Stewart Cotera Wixsan" class="w-full h-full object-cover"/>
+                                        <img src="https://lh3.googleusercontent.com/a-/ALV-UjUKtc8UDCmA6DrkDlP_fffyVe0diD0XzxwiJYQ9FQw8CGPMmNIXLg=w72-h72-p-rp-mo-ba12-br100" alt="Foto de Luis Stewart Cotera Wixsan" class="w-full h-full object-cover" width="48" height="48" loading="lazy"/>
                                     </div>
                                     <div>
                                         <h3 class="font-headline text-sm font-bold text-secondary">Luis Stewart Cotera Wixsan</h3>
@@ -919,7 +927,7 @@
             
             <div class="md:col-span-1">
                 <a href="#" class="flex items-center gap-3 mb-3" aria-label="Sensory Play Footer">
-                    <img src="img/logo.webp" alt="Logo de Sensory Play" class="h-16 w-auto object-contain"/>
+                    <img src="img/logo.webp" alt="Logo de Sensory Play" class="h-16 w-auto object-contain" width="64" height="64" loading="lazy"/>
                     <div class="flex flex-col">
                         <span class="font-headline text-xl font-extrabold text-secondary tracking-tight leading-none">Sensory Play</span>
                         <span class="text-[9px] font-body font-semibold text-primary tracking-wider uppercase">Centro Terapéutico</span>
@@ -979,12 +987,11 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Script de AOS diferido para no bloquear render -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script>
-        // Variable global para almacenar el número de WhatsApp dinámico
         let activeWhatsappNumber = "51997305893";
 
-        // Función para cargar los datos de Decap CMS desde data/contacto.json
         async function loadSiteData() {
             try {
                 const response = await fetch('data/contacto.json');
@@ -1033,19 +1040,19 @@
                     const horario = data.horario;
 
                     const contactAddressEl = document.getElementById('contact-address');
-                    if (contactAddressEl && dir) contactAddressEl.textContent = dir;
+                    if (contactAddressEl) contactAddressEl.textContent = dir;
 
                     const footerAddressEl = document.getElementById('footer-address-text');
-                    if (footerAddressEl && dir) footerAddressEl.textContent = dir;
+                    if (footerAddressEl) footerAddressEl.textContent = dir;
 
                     const footerDistrictEl = document.getElementById('footer-district-text');
-                    if (footerDistrictEl && distrito) footerDistrictEl.textContent = `${distrito}:`;
+                    if (footerDistrictEl) footerDistrictEl.textContent = `${distrito}:`;
 
                     const contactScheduleEl = document.getElementById('contact-schedule');
                     if (contactScheduleEl && horario) contactScheduleEl.textContent = horario;
                 }
 
-                // 3. Correo Electrónico
+                // 3. Correo
                 if (data.correo) {
                     const contactEmailEl = document.getElementById('contact-email');
                     if (contactEmailEl) contactEmailEl.textContent = data.correo;
@@ -1085,14 +1092,18 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            // Cargar datos dinámicos de Decap CMS
             loadSiteData();
 
-            // Inicializar AOS
-            AOS.init({
-                duration: 800,
-                once: true,
-                easing: 'ease-in-out'
+            // Inicializar AOS una vez cargada la ventana para evitar reflows
+            window.addEventListener('load', () => {
+                if (typeof AOS !== 'undefined') {
+                    AOS.init({
+                        duration: 800,
+                        once: true,
+                        easing: 'ease-in-out',
+                        disable: 'mobile' // Opcional: mejora radicalmente la fluidez en móviles antiguos
+                    });
+                }
             });
 
             // Menú Móvil
