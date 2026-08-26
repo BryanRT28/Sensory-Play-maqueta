@@ -105,7 +105,7 @@
 </head>
 <body class="bg-background text-on-background font-body antialiased selection:bg-primary-container selection:text-on-primary overflow-x-hidden w-full max-w-[100vw] relative">
 
-    <a href="https://wa.me/51997305893?text=Hola%20Sensory%20Play,%20quisiera%20recibir%20informaci%C3%B3n%20y%20agendar%20una%20evaluaci%C3%B3n." target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp a Sensory Play" class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center justify-center animate-bounce">
+    <a id="btn-floating-whatsapp" href="https://wa.me/51997305893?text=Hola%20Sensory%20Play,%20quisiera%20recibir%20informaci%C3%B3n%20y%20agendar%20una%20evaluaci%C3%B3n." target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp a Sensory Play" class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center justify-center animate-bounce">
         <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.183-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.765-5.77zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.289.129.332.202.043.073.043.423-.101.827z"/></svg>
     </a>
 
@@ -155,7 +155,6 @@
     </header>
 
     <main class="overflow-x-hidden w-full">
-        <!-- AÑADIDO: overflow-hidden a la sección Hero -->
         <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden w-full">
             <div class="absolute top-0 right-0 w-1/2 h-full bg-surface-container-low rounded-bl-[100px] -z-10"></div>
             
@@ -174,9 +173,8 @@
                         Acompañamos a tu hijo a desarrollar sus habilidades, fortalecer su confianza y alcanzar su máximo potencial con especialistas en Terapia Ocupacional, Lenguaje y Psicología en San Juan de Lurigancho.
                     </p>
 
-                    <!-- CONTENEDOR BOTONES ORIGINAL QUE PEDISTE RESTAURAR -->
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
-                        <a href="https://wa.me/51997305893?text=Hola,%20deseo%20aprovechar%20el%2020%25%20de%20descuento%20en%20la%20evaluaci%C3%B3n%20inicial" target="_blank" class="inline-flex justify-center items-center gap-2 bg-primary text-on-primary font-bold text-xs uppercase tracking-wider px-8 py-4 rounded-full hover:bg-primary-container transition-all shadow-lg hover:-translate-y-0.5">
+                        <a id="hero-btn-discount" href="https://wa.me/51997305893?text=Hola,%20deseo%20aprovechar%20el%2020%25%20de%20descuento%20en%20la%20evaluaci%C3%B3n%20inicial" target="_blank" class="inline-flex justify-center items-center gap-2 bg-primary text-on-primary font-bold text-xs uppercase tracking-wider px-8 py-4 rounded-full hover:bg-primary-container transition-all shadow-lg hover:-translate-y-0.5">
                             Agenda con 20% Dscto.
                             <span class="material-symbols-outlined text-lg">arrow_forward</span>
                         </a>
@@ -187,7 +185,6 @@
                 </div>
 
                 <div class="lg:col-span-6 relative flex justify-center" data-aos="fade-left">
-                    <!-- AÑADIDO: max-w-full para evitar que la imagen empuje el contenedor -->
                     <div class="relative w-full max-w-md max-w-full aspect-square rounded-3xl overflow-hidden border-8 border-surface cloud-shadow">
                         <img src="img/hero.webp" alt="Niño en sesión de integración sensorial en Sensory Play San Juan de Lurigancho" class="w-full h-full object-cover" width="500" height="500"/>
                     </div>
@@ -203,8 +200,7 @@
             </div>
         </section>
 
-        <!-- SECCIÓN PROMOCIONAL ORIGINAL QUE PEDISTE RESTAURAR -->
-        <!-- AÑADIDO: overflow-hidden -->
+        <!-- SECCIÓN PROMOCIONAL -->
         <section class="py-12 bg-surface-container-low border-y border-outline-variant/30 overflow-hidden w-full">
             <div class="max-w-7xl mx-auto px-6 md:px-16" data-aos="fade-up">
                 <div class="bg-surface rounded-3xl p-8 md:p-10 border border-primary/20 cloud-shadow flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left overflow-hidden">
@@ -218,14 +214,13 @@
                             <p class="text-sm text-on-surface-variant font-medium">En evaluaciones iniciales agendando directamente por WhatsApp.</p>
                         </div>
                     </div>
-                    <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20la%20promoci%C3%B3n%20del%2020%25%20de%20descuento" target="_blank" rel="noopener noreferrer" class="bg-primary text-on-primary font-bold text-xs uppercase tracking-wider px-8 py-4 rounded-full hover:bg-primary-container transition-all shadow-md shrink-0">
+                    <a id="banner-btn-discount" href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20la%20promoci%C3%B3n%20del%2020%25%20de%20descuento" target="_blank" rel="noopener noreferrer" class="bg-primary text-on-primary font-bold text-xs uppercase tracking-wider px-8 py-4 rounded-full hover:bg-primary-container transition-all shadow-md shrink-0">
                         Obtener Descuento
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- AÑADIDO: overflow-hidden -->
         <section id="nosotros" class="py-20 bg-surface overflow-hidden w-full">
             <div class="max-w-7xl mx-auto px-6 md:px-16">
                 <div class="text-center mb-16" data-aos="fade-up">
@@ -280,7 +275,6 @@
             </div>
         </section>
 
-        <!-- AÑADIDO: overflow-hidden -->
         <section id="servicios" class="py-20 bg-surface-container-low lotus-bg relative overflow-hidden w-full">
             <div class="max-w-7xl mx-auto px-6 md:px-16 relative z-10">
                 <div class="text-center mb-16" data-aos="fade-up">
@@ -323,7 +317,7 @@
                         </div>
 
                         <div class="px-6 sm:px-7 pb-6 pt-0">
-                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Terapia%20Ocupacional" target="_blank" rel="noopener noreferrer" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
+                            <a id="btn-service-to" href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Terapia%20Ocupacional" target="_blank" rel="noopener noreferrer" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
                                 Consultar por WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span>
                             </a>
                         </div>
@@ -343,7 +337,7 @@
                         </div>
 
                         <div class="px-6 sm:px-7 pb-6 pt-0">
-                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Terapia%20de%20Lenguaje" target="_blank" rel="noopener noreferrer" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
+                            <a id="btn-service-tl" href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Terapia%20de%20Lenguaje" target="_blank" rel="noopener noreferrer" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
                                 Consultar por WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span>
                             </a>
                         </div>
@@ -363,7 +357,7 @@
                         </div>
 
                         <div class="px-6 sm:px-7 pb-6 pt-0">
-                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Terapia%20Psicol%C3%B3gica" target="_blank" rel="noopener noreferrer" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
+                            <a id="btn-service-tp" href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Terapia%20Psicol%C3%B3gica" target="_blank" rel="noopener noreferrer" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
                                 Consultar por WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span>
                             </a>
                         </div>
@@ -381,7 +375,7 @@
                         </div>
 
                         <div class="px-6 sm:px-7 pb-6 pt-0">
-                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Talleres%20de%20Habilidades%20Sociales" target="_blank" rel="noopener noreferrer" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
+                            <a id="btn-service-ths" href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Talleres%20de%20Habilidades%20Sociales" target="_blank" rel="noopener noreferrer" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
                                 Consultar por WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span>
                             </a>
                         </div>
@@ -399,7 +393,7 @@
                         </div>
 
                         <div class="px-6 sm:px-7 pb-6 pt-0">
-                            <a href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Estimulaci%C3%B3n%20Cognitiva" target="_blank" rel="noopener noreferrer" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
+                            <a id="btn-service-tac" href="https://wa.me/51997305893?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20Estimulaci%C3%B3n%20Cognitiva" target="_blank" rel="noopener noreferrer" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-1">
                                 Consultar por WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span>
                             </a>
                         </div>
@@ -409,8 +403,7 @@
             </div>
         </section>
 
-        <!-- AÑADIDO: overflow-hidden -->
-        <section id="equipo" class="relative py-16 md:py-20 bg-white overflow-hidden font-body w-full">
+        <section id="equipo" class="relative py-16 md:py-20 bg-white overflow-hidden font-body">
             
             <div class="absolute top-0 left-0 w-32 h-32 md:w-64 md:h-64 pointer-events-none z-0" aria-hidden="true">
                 <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
@@ -577,8 +570,7 @@
             </div>
         </section>
 
-        <!-- AÑADIDO: overflow-hidden -->
-        <section class="py-16 bg-surface border-t border-outline-variant/30 overflow-hidden w-full">
+        <section class="py-16 bg-surface border-t border-outline-variant/30">
             <div class="max-w-7xl mx-auto px-6 md:px-16">
                 
                 <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b border-outline-variant/30 pb-6 mb-10 gap-4">
@@ -591,13 +583,13 @@
                         </p>
                     </div>
                     
-                    <a href="https://www.instagram.com/sensoryplay_terapias" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-bold text-secondary hover:text-primary transition-colors">
+                    <a id="insta-header-link" href="https://www.instagram.com/sensoryplay_terapias" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-bold text-secondary hover:text-primary transition-colors">
                         <div class="w-6 h-6 rounded-md bg-secondary/10 flex items-center justify-center text-secondary">
                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.203 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
                             </svg>
                         </div>
-                        <span>@sensoryplay_terapias</span>
+                        <span id="insta-user-text">@sensoryplay_terapias</span>
                     </a>
                 </div>
 
@@ -610,21 +602,21 @@
                     </div>
 
                     <div class="gallery-item aspect-square rounded-2xl overflow-hidden shadow-md border border-outline-variant/30 group hover:shadow-xl transition-all cursor-pointer relative">
-                        <img src="img/sensory-play-2.webp" alt="Dinámica de Terapia de Lenguaje en consultorio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        <img src="img/sensory-play-2.webp" alt="Feliz día del niño" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-secondary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
                         </div>
                     </div>
 
                     <div class="gallery-item aspect-square rounded-2xl overflow-hidden shadow-md border border-outline-variant/30 group hover:shadow-xl transition-all cursor-pointer relative">
-                        <img src="img/sensory-play-3.webp" alt="Sensory Tips e infografía de desarrollo infantil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        <img src="img/sensory-play-3.webp" alt="Sensory Play" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-secondary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
                         </div>
                     </div>
 
                     <div class="gallery-item aspect-square rounded-2xl overflow-hidden shadow-md border border-outline-variant/30 group hover:shadow-xl transition-all cursor-pointer relative">
-                        <img src="img/sensory-play-4.webp" alt="Instalaciones terapéuticas modernas de Sensory Play SJL" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+                        <img src="img/sensory-play-4.webp" alt="Reunión" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
                         <div class="absolute inset-0 bg-secondary/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
                         </div>
@@ -645,8 +637,7 @@
             </div>
         </div>
 
-        <!-- AÑADIDO: overflow-hidden -->
-        <section id="opiniones" class="py-20 bg-surface-container-low border-t border-outline-variant/30 relative overflow-hidden w-full">
+        <section id="opiniones" class="py-20 bg-surface-container-low border-t border-outline-variant/30 relative">
             <div class="max-w-7xl mx-auto px-6 md:px-16 relative z-10">
                 
                 <div class="text-center mb-14" data-aos="fade-up">
@@ -836,8 +827,7 @@
             </div>
         </section>
 
-        <!-- AÑADIDO: overflow-hidden -->
-        <section id="ubicacion" class="py-20 bg-surface overflow-hidden w-full">
+        <section id="ubicacion" class="py-20 bg-surface">
             <div class="max-w-7xl mx-auto px-6 md:px-16">
                 <div class="text-center mb-16" data-aos="fade-up">
                     <h2 class="font-headline text-3xl md:text-5xl font-extrabold text-secondary mb-3">Visítanos en San Juan de Lurigancho</h2>
@@ -898,13 +888,13 @@
                                 <span class="material-symbols-outlined text-primary text-2xl">location_on</span>
                                 <h3 class="font-headline text-lg font-bold text-secondary">Dirección del Centro</h3>
                             </div>
-                            <p class="text-sm text-on-surface-variant font-medium pl-9 mb-4 leading-relaxed">
+                            <p id="contact-address" class="text-sm text-on-surface-variant font-medium pl-9 mb-4 leading-relaxed">
                                 Av. Las Flores de Primavera 979 (Paradero 7 de Las Flores), San Juan de Lurigancho, Lima, Perú.
                             </p>
                             <div class="pl-9 space-y-2 text-xs text-on-surface-variant">
-                                <p class="flex items-center gap-2"><span class="material-symbols-outlined text-base">call</span> +51 997 305 893</p>
-                                <p class="flex items-center gap-2"><span class="material-symbols-outlined text-base">mail</span> sensoryplay.to@gmail.com</p>
-                                <p class="flex items-center gap-2"><span class="material-symbols-outlined text-base">schedule</span> Lun - Sáb: 8:00 am - 7:00 pm</p>
+                                <p class="flex items-center gap-2"><span class="material-symbols-outlined text-base">call</span> <span id="contact-phone">+51 997 305 893</span></p>
+                                <p class="flex items-center gap-2"><span class="material-symbols-outlined text-base">mail</span> <span id="contact-email">sensoryplay.to@gmail.com</span></p>
+                                <p class="flex items-center gap-2"><span class="material-symbols-outlined text-base">schedule</span> <span id="contact-schedule">Lun - Sáb: 8:00 am - 7:00 pm</span></p>
                             </div>
                         </div>
 
@@ -914,8 +904,8 @@
                             </div>
                             <h3 class="font-headline text-xl font-bold text-secondary mb-1">¿Tienes dudas o consultas?</h3>
                             <p class="text-xs text-on-surface-variant mb-4">Escríbenos directamente a nuestro WhatsApp para orientarte.</p>
-                            <a href="https://wa.me/51997305893" target="_blank" rel="noopener noreferrer" class="w-full border-2 border-secondary text-secondary font-bold text-xs uppercase tracking-wider py-3 rounded-full hover:bg-secondary hover:text-white transition-colors flex items-center justify-center gap-2">
-                                <span>Chatear al 997 305 893</span>
+                            <a id="btn-contact-chat" href="https://wa.me/51997305893" target="_blank" rel="noopener noreferrer" class="w-full border-2 border-secondary text-secondary font-bold text-xs uppercase tracking-wider py-3 rounded-full hover:bg-secondary hover:text-white transition-colors flex items-center justify-center gap-2">
+                                <span>Chatear al <span id="chat-phone-number">997 305 893</span></span>
                             </a>
                         </div>
                     </div>
@@ -924,8 +914,7 @@
         </section>
     </main>
 
-    <!-- AÑADIDO: overflow-hidden -->
-    <footer class="bg-surface-container-low border-t border-outline-variant/30 pt-16 pb-8 overflow-hidden w-full">
+    <footer class="bg-surface-container-low border-t border-outline-variant/30 pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-6 md:px-16 grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
             
             <div class="md:col-span-1">
@@ -945,27 +934,27 @@
                 <h4 class="font-bold text-xs text-on-surface uppercase tracking-wider mb-4">Síguenos</h4>
                 <ul class="space-y-3 text-xs text-on-surface-variant">
                     <li>
-                        <a href="https://wa.me/51997305893" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors flex items-center gap-3">
+                        <a id="footer-wa-link" href="https://wa.me/51997305893" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors flex items-center gap-3">
                             <div class="w-6 h-6 flex items-center justify-center shrink-0">
                                 <svg class="w-6 h-6 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984 0 1.763.459 3.483 1.332 5.002L2 22l5.129-1.343c1.464.798 3.111 1.218 4.883 1.218 5.508 0 9.991-4.479 9.991-9.985 0-2.667-1.038-5.175-2.924-7.062C17.194 3.041 14.68 2 12.012 2zm5.834 14.156c-.244.688-1.42 1.312-1.984 1.398-.507.077-1.149.108-1.853-.117-.428-.136-.976-.317-1.678-.621-2.952-1.276-4.88-4.248-5.028-4.444-.148-.196-1.203-1.6-1.203-3.051 0-1.452.761-2.166 1.032-2.46.27-.294.589-.368.786-.368.196 0 .393.001.564.01.182.008.425-.069.664.51.245.58.835 2.039.908 2.187.073.148.122.32.024.515-.098.196-.147.318-.294.49-.148.172-.311.385-.443.518-.148.147-.302.308-.13.57.172.262.765 1.262 1.644 2.043 1.13 1.006 2.083 1.318 2.378 1.465.295.148.467.123.639-.073.172-.196.737-.859.933-1.153.196-.295.393-.246.663-.148.271.098 1.721.81 2.016.958.295.148.492.221.565.343.073.123.073.713-.171 1.401z"/></svg>
                             </div>
-                            <span>WhatsApp (997 305 893)</span>
+                            <span id="footer-wa-text">WhatsApp (997 305 893)</span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/sensoryplay_terapias" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors flex items-center gap-3">
+                        <a id="footer-insta-link" href="https://www.instagram.com/sensoryplay_terapias" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors flex items-center gap-3">
                             <div class="w-6 h-6 flex items-center justify-center shrink-0">
                                 <svg class="w-6 h-6 text-[#E4405F]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.203 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
                             </div>
-                            <span>Instagram (@sensoryplay_terapias)</span>
+                            <span id="footer-insta-text">Instagram (@sensoryplay_terapias)</span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/profile.php?id=61554241791972" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors flex items-center gap-3">
+                        <a id="footer-fb-link" href="https://www.facebook.com/profile.php?id=61554241791972" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors flex items-center gap-3">
                             <div class="w-6 h-6 flex items-center justify-center shrink-0">
                                 <svg class="w-6 h-6 text-[#1877F2]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                             </div>
-                            <span>Facebook (Sensory Play Terapias)</span>
+                            <span id="footer-fb-text">Facebook (Sensory Play Terapias)</span>
                         </a>
                     </li>
                 </ul>
@@ -977,8 +966,8 @@
                     <li class="flex items-start gap-2">
                         <span class="material-symbols-outlined text-base text-primary shrink-0 mt-0.5">location_on</span>
                         <div>
-                            <strong class="text-on-surface block">San Juan de Lurigancho:</strong>
-                            <span>Av. Las Flores de Primavera 979 (Paradero 7 de Las Flores), SJL, Lima, Perú.</span>
+                            <strong id="footer-district-text" class="text-on-surface block">San Juan de Lurigancho:</strong>
+                            <span id="footer-address-text">Av. Las Flores de Primavera 979 (Paradero 7 de Las Flores), SJL, Lima, Perú.</span>
                         </div>
                     </li>
                 </ul>
@@ -992,7 +981,113 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        // Variable global para almacenar el número de WhatsApp dinámico
+        let activeWhatsappNumber = "51997305893";
+
+        // Función para cargar los datos de Decap CMS desde data/contacto.json
+        async function loadSiteData() {
+            try {
+                const response = await fetch('data/contacto.json');
+                if (!response.ok) return;
+                const data = await response.json();
+
+                // 1. Teléfono y WhatsApp
+                if (data.telefono_texto) {
+                    const telTexto = data.telefono_texto;
+                    activeWhatsappNumber = data.telefono_num || "51997305893";
+
+                    const contactPhoneEl = document.getElementById('contact-phone');
+                    if (contactPhoneEl) contactPhoneEl.textContent = telTexto;
+
+                    const chatPhoneEl = document.getElementById('chat-phone-number');
+                    if (chatPhoneEl) chatPhoneEl.textContent = telTexto.replace('+51', '').trim();
+
+                    const footerWaTextEl = document.getElementById('footer-wa-text');
+                    if (footerWaTextEl) footerWaTextEl.textContent = `WhatsApp (${telTexto.replace('+51', '').trim()})`;
+
+                    const updateWaHref = (elId, message) => {
+                        const el = document.getElementById(elId);
+                        if (el) el.href = `https://wa.me/${activeWhatsappNumber}?text=${encodeURIComponent(message)}`;
+                    };
+
+                    updateWaHref('btn-floating-whatsapp', 'Hola Sensory Play, quisiera recibir información y agendar una evaluación.');
+                    updateWaHref('hero-btn-discount', 'Hola, deseo aprovechar el 20% de descuento en la evaluación inicial');
+                    updateWaHref('banner-btn-discount', 'Hola, deseo información sobre la promoción del 20% de descuento');
+                    updateWaHref('btn-service-to', 'Hola, deseo información sobre Terapia Ocupacional');
+                    updateWaHref('btn-service-tl', 'Hola, deseo información sobre Terapia de Lenguaje');
+                    updateWaHref('btn-service-tp', 'Hola, deseo información sobre Terapia Psicológica');
+                    updateWaHref('btn-service-ths', 'Hola, deseo información sobre Talleres de Habilidades Sociales');
+                    updateWaHref('btn-service-tac', 'Hola, deseo información sobre Estimulación Cognitiva');
+
+                    const btnContactChat = document.getElementById('btn-contact-chat');
+                    if (btnContactChat) btnContactChat.href = `https://wa.me/${activeWhatsappNumber}`;
+
+                    const footerWaLink = document.getElementById('footer-wa-link');
+                    if (footerWaLink) footerWaLink.href = `https://wa.me/${activeWhatsappNumber}`;
+                }
+
+                // 2. Ubicación y Horarios
+                if (data.direccion) {
+                    const dir = data.direccion;
+                    const distrito = data.distrito || "San Juan de Lurigancho";
+                    const horario = data.horario;
+
+                    const contactAddressEl = document.getElementById('contact-address');
+                    if (contactAddressEl && dir) contactAddressEl.textContent = dir;
+
+                    const footerAddressEl = document.getElementById('footer-address-text');
+                    if (footerAddressEl && dir) footerAddressEl.textContent = dir;
+
+                    const footerDistrictEl = document.getElementById('footer-district-text');
+                    if (footerDistrictEl && distrito) footerDistrictEl.textContent = `${distrito}:`;
+
+                    const contactScheduleEl = document.getElementById('contact-schedule');
+                    if (contactScheduleEl && horario) contactScheduleEl.textContent = horario;
+                }
+
+                // 3. Correo Electrónico
+                if (data.correo) {
+                    const contactEmailEl = document.getElementById('contact-email');
+                    if (contactEmailEl) contactEmailEl.textContent = data.correo;
+                }
+
+                // 4. Redes Sociales
+                if (data.redes) {
+                    if (data.redes.instagram_user) {
+                        const instaUserText = document.getElementById('insta-user-text');
+                        if (instaUserText) instaUserText.textContent = data.redes.instagram_user;
+
+                        const footerInstaText = document.getElementById('footer-insta-text');
+                        if (footerInstaText) footerInstaText.textContent = `Instagram (${data.redes.instagram_user})`;
+                    }
+
+                    if (data.redes.instagram_url) {
+                        const instaHeaderLink = document.getElementById('insta-header-link');
+                        if (instaHeaderLink) instaHeaderLink.href = data.redes.instagram_url;
+
+                        const footerInstaLink = document.getElementById('footer-insta-link');
+                        if (footerInstaLink) footerInstaLink.href = data.redes.instagram_url;
+                    }
+
+                    if (data.redes.facebook_name) {
+                        const footerFbText = document.getElementById('footer-fb-text');
+                        if (footerFbText) footerFbText.textContent = data.redes.facebook_name;
+                    }
+
+                    if (data.redes.facebook_url) {
+                        const footerFbLink = document.getElementById('footer-fb-link');
+                        if (footerFbLink) footerFbLink.href = data.redes.facebook_url;
+                    }
+                }
+            } catch (err) {
+                console.log("Usando datos estáticos predeterminados.");
+            }
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
+            // Cargar datos dinámicos de Decap CMS
+            loadSiteData();
+
             // Inicializar AOS
             AOS.init({
                 duration: 800,
@@ -1089,7 +1184,7 @@
                     if(childAge) text += `*Edad del Niño/a:* ${childAge}%0A`;
                     if(message) text += `*Consulta:* ${message}%0A`;
 
-                    window.open(`https://wa.me/51997305893?text=${text}`, '_blank');
+                    window.open(`https://wa.me/${activeWhatsappNumber}?text=${text}`, '_blank');
                 });
             }
         });

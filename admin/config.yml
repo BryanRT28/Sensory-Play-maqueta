@@ -1,0 +1,32 @@
+backend:
+  name: github
+  repo: BryanRT28/Sensory-Play-maqueta
+  branch: main
+  base_url: https://decap-cms-oauth.vercel.app
+
+media_folder: "img"
+public_folder: "/img"
+locale: "es"
+
+collections:
+  - name: "configuracion"
+    label: "Configuración del Sitio"
+    files:
+      - file: "data/contacto.json"
+        label: "Datos de Contacto y Redes"
+        name: "datos_contacto"
+        fields:
+          - { label: "Teléfono Visible (ej: +51 997 305 893)", name: "telefono_texto", widget: "string" }
+          - { label: "Número WhatsApp sin espacios (ej: 51997305893)", name: "telefono_num", widget: "string" }
+          - { label: "Dirección del Centro", name: "direccion", widget: "string" }
+          - { label: "Distrito / Referencia", name: "distrito", widget: "string" }
+          - { label: "Horario de Atención", name: "horario", widget: "string" }
+          - { label: "Correo Electrónico", name: "correo", widget: "string" }
+          - label: "Redes Sociales"
+            name: "redes"
+            widget: "object"
+            fields:
+              - { label: "Usuario Instagram (ej: @sensoryplay_terapias)", name: "instagram_user", widget: "string" }
+              - { label: "Instagram URL", name: "instagram_url", widget: "string" }
+              - { label: "Nombre Facebook (ej: Facebook (Sensory Play Terapias))", name: "facebook_name", widget: "string" }
+              - { label: "Facebook URL", name: "facebook_url", widget: "string" }
