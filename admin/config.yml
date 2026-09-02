@@ -30,3 +30,5 @@ collections:
               - { label: "Instagram URL", name: "instagram_url", widget: "string" }
               - { label: "Nombre Facebook (ej: Facebook (Sensory Play Terapias))", name: "facebook_name", widget: "string" }
               - { label: "Facebook URL", name: "facebook_url", widget: "string" }
+              - { label: "Usuario TikTok (ej: @sensoryplay_terapias)", name: "tiktok_user", widget: "string" }
+              - { label: "TikTok URL", name: "tiktok_url", widget: "string" }
